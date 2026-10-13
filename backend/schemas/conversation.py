@@ -9,9 +9,6 @@ conversations 相关 Pydantic DTO
 3. API DTO —— ConversationCreate / ConversationUpdate / ConversationResponse /
               ConversationListItem(列表用,不带成员细节)
 
-队伍:咕嘎一辈子队
-修改者:咕嘎
-修改日期:2026-05-26
 """
 
 from __future__ import annotations

@@ -11,9 +11,6 @@ ChatService —— /api/v1/chat 业务入口
     schedule → 返回 Started/Queued
     SSE 端点单独从 stream_service.consume(session) 拿事件流推前端
 
-队伍:咕嘎一辈子队
-修改者:Adam Zhang
-修改日期:2026-05-25
 """
 
 import asyncio

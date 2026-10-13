@@ -7,9 +7,6 @@ Agent 领域实体
 为了让 schemas(DTO 传输)、adapters(基础设施)、models(ORM)三方共用同一份定义,
 本模块虽然位于 domain 层,但允许使用 pydantic 作为基础设施。
 
-队伍:咕嘎一辈子队
-修改者:Adam Zhang
-修改日期:2026-05-22
 """
 
 from enum import Enum

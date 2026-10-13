@@ -13,9 +13,6 @@ Skill 元数据 + 正文都存 skills 表（content 列）。
 - content 字段（正文）是完整 markdown 字符串，service 直接写 DB content 列。
 - SkillUpdate 所有字段 Optional 默认 None,partial update 模式。
 
-队伍:咕嘎一辈子队
-修改者:Musuyin
-修改日期:2026-06-05
 """
 
 from datetime import datetime

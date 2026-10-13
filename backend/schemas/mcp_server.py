@@ -9,9 +9,6 @@ mcp_servers 相关 Pydantic DTO
 3. MCPServerUpdate   — PATCH /mcp-servers/{id}
 4. MCPTestResult     — POST /mcp-servers/{id}/test 返回
 
-队伍：咕嘎一辈子队
-修改者：Musuyin
-修改日期：2026-06-08
 """
 
 from __future__ import annotations

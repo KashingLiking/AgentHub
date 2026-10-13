@@ -13,9 +13,6 @@ Agent 输出不再用单一 content + content_type 表达,而是拆解为有序�
 - type    判别字段(text / thinking / tool_use / code / approval / deployment / image / artifacts)
 - block_id 唯一标识(SSE 流式增量更新时用作主键,前端按此累积/合并)
 
-队伍:咕嘎一辈子队
-修改者:Adam Zhang
-修改日期:2026-05-25
 """
 
 from datetime import datetime

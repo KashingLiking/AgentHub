@@ -5,9 +5,6 @@ Run with:
 
 Skip behavior: if `opencode` is not on PATH, all tests in this module are skipped.
 
-队伍：咕嘎一辈子队
-修改者：lp
-修改日期：2026-05-27
 """
 import shutil
 

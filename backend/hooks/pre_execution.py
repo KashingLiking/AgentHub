@@ -13,9 +13,6 @@ PreExecutionHook —— 工具调用前同步拦截
 - TODO[auth]: 用户权限校验（检查 user_id 是否有权调用该工具）
 - TODO[rate-limit]: 限流检查（接 Redis 计数器）
 
-队伍：咕嘎一辈子队
-修改者：咕嘎
-修改日期：2026-05-27
 """
 
 import logging

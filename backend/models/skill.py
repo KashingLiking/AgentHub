@@ -11,9 +11,6 @@ Skill 的正文（Markdown content）直接存 DB content 列；内置 Skill 在
   list_with_content_for_agent 读出后塞进 system prompt。
 - author_id 必填；值为 'GUGA' 时表示系统内置 Skill；is_public 控制是否对其他用户可见。
 
-队伍：咕嘎一辈子队
-修改者：Adam Zhang
-修改日期：2026-05-22
 """
 
 from sqlalchemy import Column, String, SmallInteger, Text, UniqueConstraint, Index

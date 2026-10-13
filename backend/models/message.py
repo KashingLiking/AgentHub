@@ -19,9 +19,6 @@ messages — 消息表
 
 索引 (conversation_id, created_at) 支持按会话翻页；(thread_id) 支持反查执行细节。
 
-队伍：咕嘎一辈子队
-修改者：Adam Zhang
-修改日期：2026-05-25
 """
 
 from sqlalchemy import (

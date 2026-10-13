@@ -10,7 +10,6 @@ WorkflowService —— workflow 视图持久化业务层
 
 不做数据校验/聚合,前端给什么 threads JSON 就存什么。
 
-队伍：咕嘎一辈子队
 """
 
 from __future__ import annotations

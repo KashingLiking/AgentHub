@@ -7,9 +7,6 @@ api/v1/files.py —— 文件上传端点
 上传的文件存放在 {BACKEND_ROOT}/runtime/uploads/，文件名加 UUID 前缀防冲突。
 返回的路径是绝对路径，agent 可以直接读取。
 
-队伍：咕嘎一辈子队
-修改者：I778387
-修改日期：2026-06-01
 """
 
 from __future__ import annotations

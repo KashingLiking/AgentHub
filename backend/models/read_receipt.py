@@ -11,9 +11,6 @@ broadcast 模式下，Agent 决定不回复时写一行已读记录，
 
 唯一约束 (message_id, agent_id)：同一消息同一 Agent 只写一次，幂等。
 
-队伍：咕嘎一辈子队
-修改者：Adam Zhang
-修改日期：2026-06-05
 """
 
 from sqlalchemy import Column, String, UniqueConstraint, Index

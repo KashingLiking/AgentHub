@@ -11,9 +11,6 @@ Stream-JSON line format (relevant types):
     {"type": "result",    "subtype": "success", "result": "..."}
     {"type": "result",    "subtype": "error_during_execution", ...}
 
-队伍：咕嘎一辈子队
-修改者：Musuyin
-修改日期：2026-05-26
 """
 from __future__ import annotations
 

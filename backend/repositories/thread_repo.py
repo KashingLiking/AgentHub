@@ -6,9 +6,6 @@ checkpoint 序列化等业务专有方法。
 
 session 由调用方注入;repo 只 add / flush,commit 由 service 控制。
 
-队伍:咕嘎一辈子队
-修改者:Adam Zhang
-修改日期:2026-05-25
 """
 
 from datetime import datetime, timezone

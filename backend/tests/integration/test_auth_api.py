@@ -16,9 +16,6 @@ Auth API 集成测试 — SQLite in-memory + 真 HTTP + 真路由,fake Redis 跑
 - 响应都过 ResponseEnvelopeMiddleware → {code, message, data} 包装,
   body() helper 拆包。
 
-队伍:咕嘎一辈子队
-修改者:咕嘎(Phase C)
-修改日期:2026-06-02
 """
 from __future__ import annotations
 

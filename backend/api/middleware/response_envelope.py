@@ -8,9 +8,6 @@ ResponseEnvelopeMiddleware —— JSON 响应自动包成 {code, message, data}
 
 异常包装走 api/exception_handlers.py 注册的 exception_handler。
 
-队伍:咕嘎一辈子队
-修改者:Adam Zhang
-修改日期:2026-05-28
 """
 
 from __future__ import annotations

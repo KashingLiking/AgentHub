@@ -8,9 +8,6 @@ api/v1/messages.py —— 消息操作端点
 
 鉴权(MVP)：全部走 X-User-Id header，见 api/deps.py:get_current_user。
 
-队伍：咕嘎一辈子队
-修改者：I778387
-修改日期：2026-05-28
 """
 
 from __future__ import annotations

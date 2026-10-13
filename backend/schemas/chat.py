@@ -17,9 +17,6 @@ chat 入口相关 Pydantic DTO
 - 当前轮 round_done 后从队列取出 → 复用现有 SSE 连接继续推 agent_start / token...
 - 前端按"已排队 / 已开始"两种状态分别渲染等待提示 / 立即流式
 
-队伍:咕嘎一辈子队
-修改者:Adam Zhang
-修改日期:2026-05-22
 """
 
 from datetime import datetime

@@ -17,9 +17,6 @@ api/v1/conversations.py —— 会话 CRUD HTTP 端点
 - 列表端点(GET /conversations)走 list_for_user(user_id) 内置过滤,不需要校验
 - MVP 先信任传入 user_id,后续 conversation_service.assert_owned_by 实装后接通
 
-队伍:咕嘎一辈子队
-修改者:咕嘎
-修改日期:2026-05-26
 """
 
 from __future__ import annotations

@@ -1,0 +1,468 @@
+INFO:     Will watch for changes in these directories: ['/Users/I605212/Desktop/AgentHub-AllInOne']
+INFO:     Uvicorn running on http://0.0.0.0:18888 (Press CTRL+C to quit)
+INFO:     Started reloader process [43461] using WatchFiles
+INFO:     Started server process [43535]
+INFO:     Waiting for application startup.
+2026-08-17T07:40:42.492607Z [info     ] AgentHub backend starting up...
+2026-08-17T07:40:42.620955Z [info     ] _ensure_database: database 'agenthub' ready
+2026-08-17T07:40:43.222556Z [info     ] setup plugin alembic.autogenerate.schemas
+2026-08-17T07:40:43.222668Z [info     ] setup plugin alembic.autogenerate.tables
+2026-08-17T07:40:43.222721Z [info     ] setup plugin alembic.autogenerate.types
+2026-08-17T07:40:43.222766Z [info     ] setup plugin alembic.autogenerate.constraints
+2026-08-17T07:40:43.222805Z [info     ] setup plugin alembic.autogenerate.defaults
+2026-08-17T07:40:43.222842Z [info     ] setup plugin alembic.autogenerate.comments
+2026-08-17T07:40:43.222879Z [info     ] setup plugin alembic.autogenerate.checkconstraint_byname
+2026-08-17T07:40:43.289797Z [info     ] Context impl MySQLImpl.
+2026-08-17T07:40:43.289888Z [info     ] Will assume non-transactional DDL.
+2026-08-17T07:40:43.383685Z [info     ] alembic upgrade head: OK
+2026-08-17T07:40:43.623009Z [info     ] skill_service.scan_builtin: 0 rows affected
+2026-08-17T07:40:43.644992Z [info     ] Seeded agent (updated): Orchestrator
+2026-08-17T07:40:43.662649Z [info     ] Seeded agent (updated): Bank Relationship Agent
+2026-08-17T07:40:43.665561Z [info     ] Seed committed (2 agent(s) affected)
+2026-08-17T07:40:43.747249Z [warning  ] default_skill sui_lore_lookup referenced by agent agent-nian-builtin not found in skills table (是否漏跑 skill_service.scan_builtin?)
+2026-08-17T07:40:43.749152Z [warning  ] default_skill sui_lore_lookup referenced by agent agent-dusk-builtin not found in skills table (是否漏跑 skill_service.scan_builtin?)
+2026-08-17T07:40:43.751252Z [warning  ] default_skill sui_lore_lookup referenced by agent agent-yu-builtin not found in skills table (是否漏跑 skill_service.scan_builtin?)
+2026-08-17T07:40:43.753476Z [warning  ] default_skill sui_lore_lookup referenced by agent agent-wang-builtin not found in skills table (是否漏跑 skill_service.scan_builtin?)
+2026-08-17T07:40:43.753745Z [info     ] seed_agents: 2 rows affected
+2026-08-17T07:40:43.774457Z [info     ] seed_mcp_servers: 0 rows affected
+2026-08-17T07:40:43.794805Z [info     ] seed_orchestrator_mcp_links: 0 rows affected
+2026-08-17T07:40:43.795237Z [info     ] BRM_DESTINATION_* env vars not set — skipping bank-relationship MCP seed
+2026-08-17T07:40:48.365517Z [info     ] Agent agent-brm-builtin: connected 0 MCP client(s): []
+2026-08-17T07:40:48.408910Z [info     ] AdapterRegistry seeded: 12 agents loaded
+2026-08-17T07:40:48.431459Z [error    ] MCP streamable-http client deepwiki crashed: unhandled errors in a TaskGroup (1 sub-exception)
+2026-08-17T07:40:48.431669Z [error    ] Agent orchestrator: failed to connect MCP server 'deepwiki' (transport=streamable_http): MCP streamable-http connection to 'deepwiki' at https://mcp.deepwiki.com/mcp failed.
+2026-08-17T07:40:48.431725Z [info     ] Agent orchestrator: connected 0 MCP client(s): []
+2026-08-17T07:40:48.431778Z [info     ] orchestrator MCP clients loaded: 0 server(s)
+2026-08-17T07:40:48.433132Z [info     ] hooks registered: PRE_TOOL_USE=[PreExecutionHook, ApprovalHook], POST_TOOL_USE=[PostExecutionHook]
+2026-08-17T07:40:48.451390Z [warning  ] docker SDK 未安装 (pip install docker==7.1.0),deploy_app 工具不可用
+INFO:     Application startup complete.
+2026-08-17T07:47:21.864220Z [info     ] request method=GET path=/api/v1/agents status=401 elapsed_ms=128.9 trace_id=fb698eb7cb1a4224
+INFO:     127.0.0.1:53623 - "GET /api/v1/agents HTTP/1.1" 401 Unauthorized
+2026-08-17T07:47:21.922741Z [info     ] request method=GET path=/api/v1/squads status=200 elapsed_ms=181.4 trace_id=1e1eb7a1be1e4c35
+INFO:     127.0.0.1:53625 - "GET /api/v1/squads HTTP/1.1" 200 OK
+2026-08-17T07:47:24.240547Z [info     ] user logged in: id=2478446d-d87d-4506-8371-41ab896380ec username=testuser trace_id=716cb85ee2df48d0
+2026-08-17T07:47:24.242097Z [info     ] request method=POST path=/api/v1/auth/login status=200 elapsed_ms=229.9 trace_id=716cb85ee2df48d0
+INFO:     127.0.0.1:53645 - "POST /api/v1/auth/login HTTP/1.1" 200 OK
+2026-08-17T07:47:25.093038Z [info     ] request method=GET path=/api/v1/conversations status=200 elapsed_ms=77.8 trace_id=233e3d71b6834361
+INFO:     127.0.0.1:53652 - "GET /api/v1/conversations?limit=200 HTTP/1.1" 200 OK
+2026-08-17T07:47:25.168378Z [info     ] request method=GET path=/static/avatars/avatar-1.jpg status=304 elapsed_ms=30.8 trace_id=125d9806fd9748b4
+INFO:     127.0.0.1:53657 - "GET /static/avatars/avatar-1.jpg HTTP/1.1" 304 Not Modified
+2026-08-17T07:47:25.168614Z [info     ] request method=GET path=/static/avatars/avatar-3.jpg status=304 elapsed_ms=30.8 trace_id=c2b1f4b1b9d44714
+INFO:     127.0.0.1:53658 - "GET /static/avatars/avatar-3.jpg HTTP/1.1" 304 Not Modified
+2026-08-17T07:47:26.505518Z [info     ] request method=GET path=/api/v1/squads status=200 elapsed_ms=53.8 trace_id=144b0f425dac4233
+INFO:     127.0.0.1:53676 - "GET /api/v1/squads HTTP/1.1" 200 OK
+2026-08-17T07:47:26.518033Z [info     ] request method=GET path=/api/v1/agents status=200 elapsed_ms=67.0 trace_id=dc4d081b80f54757
+INFO:     127.0.0.1:53675 - "GET /api/v1/agents HTTP/1.1" 200 OK
+2026-08-17T07:47:26.526976Z [info     ] request method=GET path=/static/avatars/sui-11.png status=200 elapsed_ms=1.5 trace_id=063d766e06584448
+INFO:     127.0.0.1:53679 - "GET /static/avatars/sui-11.png HTTP/1.1" 200 OK
+2026-08-17T07:47:26.540116Z [info     ] request method=GET path=/static/avatars/sui-9.png status=304 elapsed_ms=4.1 trace_id=8b2f3652b94b47ea
+INFO:     127.0.0.1:53687 - "GET /static/avatars/sui-9.png HTTP/1.1" 304 Not Modified
+2026-08-17T07:47:26.540333Z [info     ] request method=GET path=/static/avatars/avatar-7.jpg status=304 elapsed_ms=4.3 trace_id=427e5811eb1b4c92
+INFO:     127.0.0.1:53688 - "GET /static/avatars/avatar-7.jpg HTTP/1.1" 304 Not Modified
+2026-08-17T07:47:26.545248Z [info     ] request method=GET path=/static/avatars/avatar-2.jpg status=304 elapsed_ms=7.0 trace_id=cbe13e62c14544b5
+INFO:     127.0.0.1:53691 - "GET /static/avatars/avatar-2.jpg HTTP/1.1" 304 Not Modified
+2026-08-17T07:47:26.545547Z [info     ] request method=GET path=/static/avatars/avatar-5.jpg status=304 elapsed_ms=6.6 trace_id=0359b1f6c50c4b54
+INFO:     127.0.0.1:53694 - "GET /static/avatars/avatar-5.jpg HTTP/1.1" 304 Not Modified
+2026-08-17T07:47:26.545655Z [info     ] request method=GET path=/static/avatars/avatar-6.jpg status=304 elapsed_ms=7.5 trace_id=f575a6fc4e424d4f
+INFO:     127.0.0.1:53692 - "GET /static/avatars/avatar-6.jpg HTTP/1.1" 304 Not Modified
+2026-08-17T07:47:26.556417Z [info     ] request method=GET path=/static/avatars/avatar-8.jpg status=304 elapsed_ms=2.8 trace_id=d1b1007be4ff440b
+INFO:     127.0.0.1:53701 - "GET /static/avatars/avatar-8.jpg HTTP/1.1" 304 Not Modified
+2026-08-17T07:47:26.556588Z [info     ] request method=GET path=/static/avatars/avatar-4.jpg status=304 elapsed_ms=2.6 trace_id=aaea8e53203c456b
+INFO:     127.0.0.1:53703 - "GET /static/avatars/avatar-4.jpg HTTP/1.1" 304 Not Modified
+2026-08-17T07:47:26.556900Z [info     ] request method=GET path=/static/avatars/sui-12.png status=200 elapsed_ms=2.8 trace_id=1ae53c44a99c4d3b
+INFO:     127.0.0.1:53704 - "GET /static/avatars/sui-12.png HTTP/1.1" 200 OK
+2026-08-17T07:47:26.557186Z [info     ] request method=GET path=/static/avatars/sui-2.png status=304 elapsed_ms=1.8 trace_id=cf26994bbea44b23
+INFO:     127.0.0.1:53706 - "GET /static/avatars/sui-2.png HTTP/1.1" 304 Not Modified
+2026-08-17T07:47:38.307603Z [info     ] request method=POST path=/api/v1/conversations status=201 elapsed_ms=43.4 trace_id=8bc47b0b20434564
+INFO:     127.0.0.1:53742 - "POST /api/v1/conversations HTTP/1.1" 201 Created
+2026-08-17T07:47:38.374406Z [info     ] request method=GET path=/api/v1/conversations/3c8c21a6-cf17-47b3-8a7b-f12bd1bed731 status=200 elapsed_ms=16.7 trace_id=43d083b046d34ec1
+INFO:     127.0.0.1:53746 - "GET /api/v1/conversations/3c8c21a6-cf17-47b3-8a7b-f12bd1bed731 HTTP/1.1" 200 OK
+2026-08-17T07:47:38.416913Z [info     ] request method=GET path=/api/v1/conversations/3c8c21a6-cf17-47b3-8a7b-f12bd1bed731/messages status=200 elapsed_ms=31.5 trace_id=6fa014534a53479e
+INFO:     127.0.0.1:53751 - "GET /api/v1/conversations/3c8c21a6-cf17-47b3-8a7b-f12bd1bed731/messages HTTP/1.1" 200 OK
+2026-08-17T07:47:38.419325Z [info     ] request method=GET path=/api/v1/agents status=200 elapsed_ms=60.2 trace_id=c5c03b8af2f1425f
+INFO:     127.0.0.1:53748 - "GET /api/v1/agents HTTP/1.1" 200 OK
+2026-08-17T07:47:38.445070Z [info     ] request method=GET path=/api/v1/chat/stream/3c8c21a6-cf17-47b3-8a7b-f12bd1bed731 status=200 elapsed_ms=9.0 trace_id=1fb997cdf2844e04
+INFO:     127.0.0.1:53755 - "GET /api/v1/chat/stream/3c8c21a6-cf17-47b3-8a7b-f12bd1bed731?after_message_id=__START__ HTTP/1.1" 200 OK
+2026-08-17T07:47:54.671659Z [info     ] request method=POST path=/api/v1/chat status=200 elapsed_ms=90.6 trace_id=67dbe2b7db904300
+INFO:     127.0.0.1:53821 - "POST /api/v1/chat HTTP/1.1" 200 OK
+2026-08-17T07:47:54.756217Z [info     ] request method=GET path=/api/v1/agents status=200 elapsed_ms=23.2 trace_id=964b20ad0a424a30
+INFO:     127.0.0.1:53823 - "GET /api/v1/agents HTTP/1.1" 200 OK
+2026-08-17T07:47:56.684041Z [info     ] request method=GET path=/api/v1/workflows status=200 elapsed_ms=36.9 trace_id=fc1fff06d30a4656
+INFO:     127.0.0.1:53839 - "GET /api/v1/workflows?conversation_id=3c8c21a6-cf17-47b3-8a7b-f12bd1bed731&limit=20 HTTP/1.1" 200 OK
+2026-08-17T07:47:56.702537Z [info     ] request method=GET path=/api/v1/agents status=200 elapsed_ms=55.2 trace_id=b0e6b399ab9c44af
+INFO:     127.0.0.1:53840 - "GET /api/v1/agents HTTP/1.1" 200 OK
+2026-08-17T07:48:01.285186Z [info     ] request method=GET path=/api/v1/sandbox/3c8c21a6-cf17-47b3-8a7b-f12bd1bed731/files status=200 elapsed_ms=14.8 trace_id=21f8453f9b33422c
+INFO:     127.0.0.1:53857 - "GET /api/v1/sandbox/3c8c21a6-cf17-47b3-8a7b-f12bd1bed731/files HTTP/1.1" 200 OK
+2026-08-17T07:48:04.126962Z [info     ] PRE_TOOL_USE tool=dispatch_to_agent user=2478446d-d87d-4506-8371-41ab896380ec conversation=3c8c21a6-cf17-47b3-8a7b-f12bd1bed731 thread=702569de-9c1b-4e25-8f56-a414aaf3b940 trace_id=67dbe2b7db904300
+2026-08-17T07:48:04.127501Z [info     ] orchestrator 702569de-9c1b-4e25-8f56-a414aaf3b940 executing tool=dispatch_to_agent call_id=toolu_bdrk_01A5CE9oJhz9xAyTdxVrBQNB trace_id=67dbe2b7db904300
+2026-08-17T07:48:04.143165Z [info     ] _run_thread started thread=32459d28-4d01-4114-96be-29eb91be2ec5 agent=agent-coder-builtin trace_id=67dbe2b7db904300
+2026-08-17T07:48:04.162571Z [info     ] POST_TOOL_USE tool=dispatch_to_agent user=2478446d-d87d-4506-8371-41ab896380ec conversation=3c8c21a6-cf17-47b3-8a7b-f12bd1bed731 thread=702569de-9c1b-4e25-8f56-a414aaf3b940 input_keys=['agent_id', 'prompt', 'role_hint'] trace_id=67dbe2b7db904300
+2026-08-17T07:48:04.203055Z [info     ] request method=GET path=/api/v1/agents status=200 elapsed_ms=18.9 trace_id=6e270f27e7a14a9b
+INFO:     127.0.0.1:53876 - "GET /api/v1/agents HTTP/1.1" 200 OK
+2026-08-17T07:48:04.234249Z [info     ] request method=GET path=/api/v1/workflows status=200 elapsed_ms=7.9 trace_id=02f7c16c88fc494b
+INFO:     127.0.0.1:53881 - "GET /api/v1/workflows?conversation_id=3c8c21a6-cf17-47b3-8a7b-f12bd1bed731&limit=20 HTTP/1.1" 200 OK
+2026-08-17T07:48:04.248914Z [info     ] request method=GET path=/api/v1/agents status=200 elapsed_ms=22.5 trace_id=53d5416ab17e4117
+INFO:     127.0.0.1:53883 - "GET /api/v1/agents HTTP/1.1" 200 OK
+2026-08-17T07:48:06.024324Z [warning  ] count_tokens API 不可用,本进程切换到字符数 / 4 兜底: NotFoundError: Error code: 404 - {'errorMessage': '404 - Page not found', 'errorCode': 'PAGE_NOT_FOUND', 'date': '2026-08-17T07:48:05.972616777Z', 'statusCode': 404} trace_id=67dbe2b7db904300
+2026-08-17T07:48:39.943046Z [info     ] Thread 32459d28-4d01-4114-96be-29eb91be2ec5 AgentDone 收到,准备落 messages: block_count=1, block_order=['10f249fa-ed93-4ebd-8c4a-613030d73aa8'], tokens=1914/2834 trace_id=67dbe2b7db904300
+2026-08-17T07:48:41.232593Z [info     ] request method=GET path=/api/v1/conversations/3c8c21a6-cf17-47b3-8a7b-f12bd1bed731/messages status=200 elapsed_ms=43.3 trace_id=99b3ef1bb8944f22
+INFO:     127.0.0.1:54028 - "GET /api/v1/conversations/3c8c21a6-cf17-47b3-8a7b-f12bd1bed731/messages?before=3652652d-f0c0-4a22-9871-a64c7b70f095&limit=20 HTTP/1.1" 200 OK
+2026-08-17T07:48:44.154758Z [info     ] PRE_TOOL_USE tool=read_thread_result user=2478446d-d87d-4506-8371-41ab896380ec conversation=3c8c21a6-cf17-47b3-8a7b-f12bd1bed731 thread=702569de-9c1b-4e25-8f56-a414aaf3b940 trace_id=67dbe2b7db904300
+2026-08-17T07:48:44.155243Z [info     ] orchestrator 702569de-9c1b-4e25-8f56-a414aaf3b940 executing tool=read_thread_result call_id=toolu_bdrk_019RLHgHGJWNQSEaNmnCpV34 trace_id=67dbe2b7db904300
+2026-08-17T07:48:44.199636Z [info     ] POST_TOOL_USE tool=read_thread_result user=2478446d-d87d-4506-8371-41ab896380ec conversation=3c8c21a6-cf17-47b3-8a7b-f12bd1bed731 thread=702569de-9c1b-4e25-8f56-a414aaf3b940 input_keys=['text_only', 'thread_id'] trace_id=67dbe2b7db904300
+2026-08-17T07:48:54.150011Z [info     ] request method=GET path=/api/v1/sandbox/3c8c21a6-cf17-47b3-8a7b-f12bd1bed731/files status=200 elapsed_ms=11.5 trace_id=3f4be602ff394127
+INFO:     127.0.0.1:54071 - "GET /api/v1/sandbox/3c8c21a6-cf17-47b3-8a7b-f12bd1bed731/files HTTP/1.1" 200 OK
+2026-08-17T07:48:54.796804Z [info     ] request method=GET path=/api/v1/workflows status=200 elapsed_ms=18.9 trace_id=ca19c84b220c482c
+INFO:     127.0.0.1:54078 - "GET /api/v1/workflows?conversation_id=3c8c21a6-cf17-47b3-8a7b-f12bd1bed731&limit=20 HTTP/1.1" 200 OK
+2026-08-17T07:48:54.819755Z [info     ] request method=GET path=/api/v1/agents status=200 elapsed_ms=40.4 trace_id=fa73bf138ae54d7b
+INFO:     127.0.0.1:54080 - "GET /api/v1/agents HTTP/1.1" 200 OK
+2026-08-17T07:48:56.238053Z [info     ] request method=GET path=/api/v1/workflows status=200 elapsed_ms=20.6 trace_id=5a7202aa5e404f08
+INFO:     127.0.0.1:54088 - "GET /api/v1/workflows?conversation_id=3c8c21a6-cf17-47b3-8a7b-f12bd1bed731&limit=20 HTTP/1.1" 200 OK
+2026-08-17T07:48:56.256458Z [info     ] request method=GET path=/api/v1/agents status=200 elapsed_ms=37.2 trace_id=2a0b64b7c0b64f23
+INFO:     127.0.0.1:54090 - "GET /api/v1/agents HTTP/1.1" 200 OK
+2026-08-17T07:48:56.457512Z [info     ] PRE_TOOL_USE tool=create_file user=2478446d-d87d-4506-8371-41ab896380ec conversation=3c8c21a6-cf17-47b3-8a7b-f12bd1bed731 thread=702569de-9c1b-4e25-8f56-a414aaf3b940 trace_id=67dbe2b7db904300
+2026-08-17T07:48:56.481769Z [info     ] APPROVAL_REQUESTED tool=create_file block_id=fd3d9727-1ead-4b4a-9577-b59ef5127e6a user=2478446d-d87d-4506-8371-41ab896380ec conversation=3c8c21a6-cf17-47b3-8a7b-f12bd1bed731 — waiting for user decision (timeout=120s) trace_id=67dbe2b7db904300
+2026-08-17T07:48:56.534626Z [info     ] request method=GET path=/api/v1/agents status=200 elapsed_ms=22.2 trace_id=7c2c0f95475f4623
+INFO:     127.0.0.1:54093 - "GET /api/v1/agents HTTP/1.1" 200 OK
+2026-08-17T07:48:59.413191Z [info     ] APPROVAL approved tool=create_file block_id=fd3d9727-1ead-4b4a-9577-b59ef5127e6a user=2478446d-d87d-4506-8371-41ab896380ec trace_id=67dbe2b7db904300
+2026-08-17T07:48:59.414041Z [info     ] orchestrator 702569de-9c1b-4e25-8f56-a414aaf3b940 executing tool=create_file call_id=toolu_bdrk_01Tkj8nBw5ym2va3EFThSa6o trace_id=67dbe2b7db904300
+2026-08-17T07:48:59.461003Z [info     ] POST_TOOL_USE tool=create_file user=2478446d-d87d-4506-8371-41ab896380ec conversation=3c8c21a6-cf17-47b3-8a7b-f12bd1bed731 thread=702569de-9c1b-4e25-8f56-a414aaf3b940 input_keys=['content', 'path'] trace_id=67dbe2b7db904300
+2026-08-17T07:48:59.461554Z [info     ] request method=POST path=/api/v1/approvals/fd3d9727-1ead-4b4a-9577-b59ef5127e6a/decide status=200 elapsed_ms=137.0 trace_id=88e26b079a1845cf
+INFO:     127.0.0.1:54103 - "POST /api/v1/approvals/fd3d9727-1ead-4b4a-9577-b59ef5127e6a/decide HTTP/1.1" 200 OK
+WARNING:  WatchFiles detected changes in 'backend/runtime/memory/2478446d-d87d-4506-8371-41ab896380ec/3c8c21a6-cf17-47b3-8a7b-f12bd1bed731/trapping_rain_water.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+2026-08-17T07:48:59.703717Z [info     ] AgentHub backend shutting down...
+2026-08-17T07:48:59.731967Z [info     ] Backend shutdown complete
+INFO:     Application shutdown complete.
+INFO:     Finished server process [43535]
+INFO:     Started server process [44255]
+INFO:     Waiting for application startup.
+2026-08-17T07:49:01.923438Z [info     ] AgentHub backend starting up...
+2026-08-17T07:49:01.942798Z [info     ] _ensure_database: database 'agenthub' ready
+2026-08-17T07:49:02.051768Z [info     ] setup plugin alembic.autogenerate.schemas
+2026-08-17T07:49:02.051829Z [info     ] setup plugin alembic.autogenerate.tables
+2026-08-17T07:49:02.051858Z [info     ] setup plugin alembic.autogenerate.types
+2026-08-17T07:49:02.051885Z [info     ] setup plugin alembic.autogenerate.constraints
+2026-08-17T07:49:02.051908Z [info     ] setup plugin alembic.autogenerate.defaults
+2026-08-17T07:49:02.051932Z [info     ] setup plugin alembic.autogenerate.comments
+2026-08-17T07:49:02.051955Z [info     ] setup plugin alembic.autogenerate.checkconstraint_byname
+2026-08-17T07:49:02.076648Z [info     ] Context impl MySQLImpl.
+2026-08-17T07:49:02.076693Z [info     ] Will assume non-transactional DDL.
+2026-08-17T07:49:02.091164Z [info     ] alembic upgrade head: OK
+2026-08-17T07:49:02.108727Z [warning  ] stale threads reaped on startup: 1 rows (presumed dead from previous run)
+2026-08-17T07:49:02.138700Z [info     ] skill_service.scan_builtin: 0 rows affected
+2026-08-17T07:49:02.142032Z [info     ] Seeded agent (updated): Orchestrator
+2026-08-17T07:49:02.148125Z [info     ] Seeded agent (updated): Bank Relationship Agent
+2026-08-17T07:49:02.148890Z [info     ] Seed committed (2 agent(s) affected)
+2026-08-17T07:49:02.167108Z [warning  ] default_skill sui_lore_lookup referenced by agent agent-nian-builtin not found in skills table (是否漏跑 skill_service.scan_builtin?)
+2026-08-17T07:49:02.167602Z [warning  ] default_skill sui_lore_lookup referenced by agent agent-dusk-builtin not found in skills table (是否漏跑 skill_service.scan_builtin?)
+2026-08-17T07:49:02.168152Z [warning  ] default_skill sui_lore_lookup referenced by agent agent-yu-builtin not found in skills table (是否漏跑 skill_service.scan_builtin?)
+2026-08-17T07:49:02.168682Z [warning  ] default_skill sui_lore_lookup referenced by agent agent-wang-builtin not found in skills table (是否漏跑 skill_service.scan_builtin?)
+2026-08-17T07:49:02.168714Z [info     ] seed_agents: 2 rows affected
+2026-08-17T07:49:02.169912Z [info     ] seed_mcp_servers: 0 rows affected
+2026-08-17T07:49:02.171044Z [info     ] seed_orchestrator_mcp_links: 0 rows affected
+2026-08-17T07:49:02.171079Z [info     ] BRM_DESTINATION_* env vars not set — skipping bank-relationship MCP seed
+2026-08-17T07:49:02.849643Z [info     ] Agent agent-brm-builtin: connected 0 MCP client(s): []
+2026-08-17T07:49:02.869189Z [info     ] AdapterRegistry seeded: 12 agents loaded
+2026-08-17T07:49:02.877051Z [error    ] MCP streamable-http client deepwiki crashed: unhandled errors in a TaskGroup (1 sub-exception)
+2026-08-17T07:49:02.877155Z [error    ] Agent orchestrator: failed to connect MCP server 'deepwiki' (transport=streamable_http): MCP streamable-http connection to 'deepwiki' at https://mcp.deepwiki.com/mcp failed.
+2026-08-17T07:49:02.877187Z [info     ] Agent orchestrator: connected 0 MCP client(s): []
+2026-08-17T07:49:02.877216Z [info     ] orchestrator MCP clients loaded: 0 server(s)
+2026-08-17T07:49:02.878229Z [info     ] hooks registered: PRE_TOOL_USE=[PreExecutionHook, ApprovalHook], POST_TOOL_USE=[PostExecutionHook]
+2026-08-17T07:49:02.879238Z [warning  ] docker SDK 未安装 (pip install docker==7.1.0),deploy_app 工具不可用
+INFO:     Application startup complete.
+2026-08-17T07:49:03.893028Z [info     ] request method=GET path=/api/v1/sandbox/3c8c21a6-cf17-47b3-8a7b-f12bd1bed731/files status=200 elapsed_ms=78.2 trace_id=5fc9a7b1eae048d6
+INFO:     127.0.0.1:54125 - "GET /api/v1/sandbox/3c8c21a6-cf17-47b3-8a7b-f12bd1bed731/files HTTP/1.1" 200 OK
+2026-08-17T07:49:06.711002Z [info     ] request method=GET path=/api/v1/workflows status=200 elapsed_ms=28.0 trace_id=7ebb3218b06649a3
+INFO:     127.0.0.1:54142 - "GET /api/v1/workflows?conversation_id=3c8c21a6-cf17-47b3-8a7b-f12bd1bed731&limit=20 HTTP/1.1" 200 OK
+2026-08-17T07:49:06.734793Z [info     ] request method=GET path=/api/v1/agents status=200 elapsed_ms=51.4 trace_id=205d08cf9df448b4
+INFO:     127.0.0.1:54143 - "GET /api/v1/agents HTTP/1.1" 200 OK
+2026-08-17T07:49:09.331425Z [info     ] request method=GET path=/api/v1/workflows status=200 elapsed_ms=18.9 trace_id=9da7df022075457f
+INFO:     127.0.0.1:54163 - "GET /api/v1/workflows?conversation_id=3c8c21a6-cf17-47b3-8a7b-f12bd1bed731&limit=20 HTTP/1.1" 200 OK
+2026-08-17T07:49:09.349120Z [info     ] request method=GET path=/api/v1/agents status=200 elapsed_ms=36.2 trace_id=2f8d78499bd542a0
+INFO:     127.0.0.1:54164 - "GET /api/v1/agents HTTP/1.1" 200 OK
+2026-08-17T07:49:43.228657Z [info     ] request method=GET path=/api/v1/chat/stream/3c8c21a6-cf17-47b3-8a7b-f12bd1bed731 status=200 elapsed_ms=15.2 trace_id=14c9fe77202945a9
+INFO:     127.0.0.1:54290 - "GET /api/v1/chat/stream/3c8c21a6-cf17-47b3-8a7b-f12bd1bed731 HTTP/1.1" 200 OK
+2026-08-17T07:49:43.302915Z [info     ] request method=POST path=/api/v1/chat status=200 elapsed_ms=88.1 trace_id=3e4ce2b479e1484b
+INFO:     127.0.0.1:54292 - "POST /api/v1/chat HTTP/1.1" 200 OK
+2026-08-17T07:49:43.349726Z [info     ] request method=GET path=/api/v1/agents status=200 elapsed_ms=23.2 trace_id=f398f30fc1544e10
+INFO:     127.0.0.1:54296 - "GET /api/v1/agents HTTP/1.1" 200 OK
+2026-08-17T07:49:46.613746Z [info     ] orchestrator 5fa0e568-3809-4a6d-9caa-d8a0b584b23f done after 1 round(s), tokens=18096/22 trace_id=3e4ce2b479e1484b
+2026-08-17T07:49:46.665175Z [info     ] WorkflowService: saved id=a681e7a5-c78e-4c5d-bfd9-c9b4ec4c99c6 conv=3c8c21a6-cf17-47b3-8a7b-f12bd1bed731 threads=3 trace_id=ffbd6fee72714747
+2026-08-17T07:49:46.666801Z [info     ] request method=POST path=/api/v1/workflows status=201 elapsed_ms=17.2 trace_id=ffbd6fee72714747
+INFO:     127.0.0.1:54318 - "POST /api/v1/workflows HTTP/1.1" 201 Created
+2026-08-17T07:49:46.668241Z [info     ] request method=GET path=/api/v1/agents status=200 elapsed_ms=31.9 trace_id=253ebf088f444197
+INFO:     127.0.0.1:54315 - "GET /api/v1/agents HTTP/1.1" 200 OK
+2026-08-17T07:50:11.863442Z [info     ] request method=GET path=/api/v1/conversations/3c8c21a6-cf17-47b3-8a7b-f12bd1bed731/token_usage status=200 elapsed_ms=43.5 trace_id=89afe56072ac4050
+INFO:     127.0.0.1:54412 - "GET /api/v1/conversations/3c8c21a6-cf17-47b3-8a7b-f12bd1bed731/token_usage HTTP/1.1" 200 OK
+2026-08-17T07:50:11.878790Z [info     ] request method=GET path=/api/v1/agents status=200 elapsed_ms=58.4 trace_id=cf81b602473f430b
+INFO:     127.0.0.1:54413 - "GET /api/v1/agents HTTP/1.1" 200 OK
+2026-08-17T07:50:19.996571Z [info     ] request method=GET path=/api/v1/skills status=200 elapsed_ms=10.9 trace_id=d9efe5d69d1b4419
+INFO:     127.0.0.1:54447 - "GET /api/v1/skills HTTP/1.1" 200 OK
+2026-08-17T07:50:23.173849Z [info     ] request method=GET path=/api/v1/mcp-servers status=200 elapsed_ms=13.5 trace_id=48fe05f6ad4d4536
+INFO:     127.0.0.1:54463 - "GET /api/v1/mcp-servers HTTP/1.1" 200 OK
+2026-08-17T07:50:24.119349Z [info     ] request method=GET path=/api/v1/skills status=200 elapsed_ms=5.2 trace_id=6345d00525504a2c
+INFO:     127.0.0.1:54469 - "GET /api/v1/skills HTTP/1.1" 200 OK
+2026-08-17T07:50:29.464542Z [info     ] request method=GET path=/api/v1/conversations status=200 elapsed_ms=15.8 trace_id=0750aa02025141f4
+INFO:     127.0.0.1:54486 - "GET /api/v1/conversations?limit=200 HTTP/1.1" 200 OK
+2026-08-17T07:50:30.598912Z [info     ] request method=GET path=/api/v1/agents status=200 elapsed_ms=46.6 trace_id=028be1e1fb9c4bb7
+INFO:     127.0.0.1:54494 - "GET /api/v1/agents HTTP/1.1" 200 OK
+2026-08-17T07:50:30.600323Z [info     ] request method=GET path=/api/v1/squads status=200 elapsed_ms=47.7 trace_id=9d0475d40d194f24
+INFO:     127.0.0.1:54495 - "GET /api/v1/squads HTTP/1.1" 200 OK
+2026-08-17T07:50:40.018934Z [info     ] request method=GET path=/api/v1/agents status=200 elapsed_ms=14.8 trace_id=fd9d936d077e402e
+INFO:     127.0.0.1:54527 - "GET /api/v1/agents HTTP/1.1" 200 OK
+2026-08-17T07:50:42.398122Z [info     ] request method=GET path=/api/v1/skills status=200 elapsed_ms=9.9 trace_id=f532667cad774006
+INFO:     127.0.0.1:54541 - "GET /api/v1/skills HTTP/1.1" 200 OK
+2026-08-17T07:50:42.398772Z [info     ] request method=GET path=/api/v1/mcp-servers status=200 elapsed_ms=10.4 trace_id=c37779884dc34856
+INFO:     127.0.0.1:54542 - "GET /api/v1/mcp-servers HTTP/1.1" 200 OK
+2026-08-17T07:50:42.400333Z [info     ] request method=GET path=/api/v1/agents/agent-data-analyst-builtin status=200 elapsed_ms=11.5 trace_id=729b1869784045f7
+INFO:     127.0.0.1:54544 - "GET /api/v1/agents/agent-data-analyst-builtin HTTP/1.1" 200 OK
+2026-08-17T07:50:42.434011Z [info     ] request method=GET path=/api/v1/mcp-servers status=200 elapsed_ms=6.9 trace_id=0ecb34cad2b44b55
+INFO:     127.0.0.1:54550 - "GET /api/v1/mcp-servers HTTP/1.1" 200 OK
+2026-08-17T07:50:42.440267Z [info     ] request method=GET path=/api/v1/skills status=200 elapsed_ms=13.3 trace_id=8c27085a1086480f
+INFO:     127.0.0.1:54549 - "GET /api/v1/skills HTTP/1.1" 200 OK
+2026-08-17T07:50:43.018652Z [info     ] request method=GET path=/api/v1/agents/agent-coder-builtin status=200 elapsed_ms=10.5 trace_id=ac18e5735c544877
+INFO:     127.0.0.1:54558 - "GET /api/v1/agents/agent-coder-builtin HTTP/1.1" 200 OK
+2026-08-17T07:50:43.051231Z [info     ] request method=GET path=/api/v1/mcp-servers status=200 elapsed_ms=11.2 trace_id=f5fcb7f3251d499c
+INFO:     127.0.0.1:54564 - "GET /api/v1/mcp-servers HTTP/1.1" 200 OK
+2026-08-17T07:50:43.052993Z [info     ] request method=GET path=/api/v1/skills status=200 elapsed_ms=13.3 trace_id=6bb95def855c4cd0
+INFO:     127.0.0.1:54563 - "GET /api/v1/skills HTTP/1.1" 200 OK
+2026-08-17T07:51:27.295087Z [info     ] request method=POST path=/api/v1/agents status=201 elapsed_ms=74.4 trace_id=542cb31a4dcd4d88
+INFO:     127.0.0.1:54701 - "POST /api/v1/agents HTTP/1.1" 201 Created
+2026-08-17T07:51:27.353225Z [info     ] request method=GET path=/static/avatars/avatar-12.jpg status=200 elapsed_ms=36.4 trace_id=01cc0dcd9bce4d4d
+INFO:     127.0.0.1:54704 - "GET /static/avatars/avatar-12.jpg HTTP/1.1" 200 OK
+2026-08-17T07:51:27.356239Z [info     ] request method=GET path=/api/v1/agents/112e5ce3-2560-4e83-b190-ceefb5e546ba status=200 elapsed_ms=11.0 trace_id=9d4385bdb96b452d
+INFO:     127.0.0.1:54707 - "GET /api/v1/agents/112e5ce3-2560-4e83-b190-ceefb5e546ba HTTP/1.1" 200 OK
+2026-08-17T07:51:27.382238Z [info     ] request method=GET path=/api/v1/skills status=200 elapsed_ms=7.4 trace_id=b7b45b380d66483e
+INFO:     127.0.0.1:54712 - "GET /api/v1/skills HTTP/1.1" 200 OK
+2026-08-17T07:51:27.382731Z [info     ] request method=GET path=/api/v1/mcp-servers status=200 elapsed_ms=7.8 trace_id=319fd199bd254885
+INFO:     127.0.0.1:54713 - "GET /api/v1/mcp-servers HTTP/1.1" 200 OK
+2026-08-17T07:51:29.367828Z [info     ] request method=GET path=/api/v1/conversations status=200 elapsed_ms=10.3 trace_id=1e923afa821d438e
+INFO:     127.0.0.1:54720 - "GET /api/v1/conversations?limit=200 HTTP/1.1" 200 OK
+2026-08-17T07:51:29.931259Z [info     ] request method=GET path=/api/v1/squads status=200 elapsed_ms=25.7 trace_id=52de642936304978
+INFO:     127.0.0.1:54729 - "GET /api/v1/squads HTTP/1.1" 200 OK
+2026-08-17T07:51:29.940731Z [info     ] request method=GET path=/api/v1/agents status=200 elapsed_ms=35.6 trace_id=4bd6dcf574e44de4
+INFO:     127.0.0.1:54728 - "GET /api/v1/agents HTTP/1.1" 200 OK
+2026-08-17T07:51:36.901123Z [info     ] request method=POST path=/api/v1/conversations status=201 elapsed_ms=44.0 trace_id=ea5d83c38cf9452e
+INFO:     127.0.0.1:54750 - "POST /api/v1/conversations HTTP/1.1" 201 Created
+2026-08-17T07:51:36.931149Z [info     ] request method=GET path=/api/v1/conversations/93d3bb8f-b812-477e-9cec-0ff2f9193790 status=200 elapsed_ms=14.2 trace_id=c8418b69794941f4
+INFO:     127.0.0.1:54753 - "GET /api/v1/conversations/93d3bb8f-b812-477e-9cec-0ff2f9193790 HTTP/1.1" 200 OK
+2026-08-17T07:51:36.951153Z [info     ] request method=GET path=/api/v1/conversations/93d3bb8f-b812-477e-9cec-0ff2f9193790/messages status=200 elapsed_ms=9.4 trace_id=5e142ce83b2b430c
+INFO:     127.0.0.1:54759 - "GET /api/v1/conversations/93d3bb8f-b812-477e-9cec-0ff2f9193790/messages HTTP/1.1" 200 OK
+2026-08-17T07:51:36.954867Z [info     ] request method=GET path=/api/v1/agents status=200 elapsed_ms=24.7 trace_id=fb1104541b6045e1
+INFO:     127.0.0.1:54756 - "GET /api/v1/agents HTTP/1.1" 200 OK
+2026-08-17T07:51:36.967723Z [info     ] request method=GET path=/api/v1/chat/stream/93d3bb8f-b812-477e-9cec-0ff2f9193790 status=200 elapsed_ms=5.8 trace_id=19aedfa0ba1442b3
+INFO:     127.0.0.1:54762 - "GET /api/v1/chat/stream/93d3bb8f-b812-477e-9cec-0ff2f9193790?after_message_id=__START__ HTTP/1.1" 200 OK
+2026-08-17T07:51:40.791697Z [info     ] request method=POST path=/api/v1/chat status=200 elapsed_ms=83.1 trace_id=f1026dc0ae1a4914
+INFO:     127.0.0.1:54778 - "POST /api/v1/chat HTTP/1.1" 200 OK
+2026-08-17T07:51:40.833547Z [info     ] request method=GET path=/api/v1/agents status=200 elapsed_ms=21.5 trace_id=34352aa0f0774e6e
+INFO:     127.0.0.1:54783 - "GET /api/v1/agents HTTP/1.1" 200 OK
+2026-08-17T07:51:46.390524Z [info     ] orchestrator 1b798791-9edc-420f-a88e-030c2450757c done after 1 round(s), tokens=17707/184 trace_id=f1026dc0ae1a4914
+2026-08-17T07:51:46.447780Z [info     ] WorkflowService: saved id=13af7e88-052f-48f1-a6a9-68ce665cac82 conv=93d3bb8f-b812-477e-9cec-0ff2f9193790 threads=1 trace_id=23a7927a56cd4c18
+2026-08-17T07:51:46.449046Z [info     ] request method=POST path=/api/v1/workflows status=201 elapsed_ms=21.5 trace_id=23a7927a56cd4c18
+INFO:     127.0.0.1:54808 - "POST /api/v1/workflows HTTP/1.1" 201 Created
+2026-08-17T07:51:46.457228Z [info     ] request method=GET path=/api/v1/agents status=200 elapsed_ms=30.5 trace_id=f2a5700c3ac0464d
+INFO:     127.0.0.1:54806 - "GET /api/v1/agents HTTP/1.1" 200 OK
+2026-08-17T07:51:46.623757Z [info     ] request method=GET path=/api/v1/workflows status=200 elapsed_ms=29.0 trace_id=029721990a0b43a5
+INFO:     127.0.0.1:54814 - "GET /api/v1/workflows?conversation_id=93d3bb8f-b812-477e-9cec-0ff2f9193790&limit=20 HTTP/1.1" 200 OK
+2026-08-17T07:51:46.645721Z [info     ] request method=GET path=/api/v1/agents status=200 elapsed_ms=50.6 trace_id=14814f87dfe34d80
+INFO:     127.0.0.1:54815 - "GET /api/v1/agents HTTP/1.1" 200 OK
+2026-08-17T07:51:57.159385Z [info     ] request method=GET path=/api/v1/chat/stream/93d3bb8f-b812-477e-9cec-0ff2f9193790 status=200 elapsed_ms=15.5 trace_id=8edfafdc042b4004
+INFO:     127.0.0.1:54851 - "GET /api/v1/chat/stream/93d3bb8f-b812-477e-9cec-0ff2f9193790 HTTP/1.1" 200 OK
+2026-08-17T07:51:57.214817Z [info     ] request method=POST path=/api/v1/chat status=200 elapsed_ms=56.5 trace_id=66d2d05ec4c1453b
+INFO:     127.0.0.1:54854 - "POST /api/v1/chat HTTP/1.1" 200 OK
+2026-08-17T07:51:57.255385Z [info     ] request method=GET path=/api/v1/agents status=200 elapsed_ms=21.3 trace_id=46d015ffdb034243
+INFO:     127.0.0.1:54860 - "GET /api/v1/agents HTTP/1.1" 200 OK
+2026-08-17T07:52:01.569513Z [info     ] orchestrator 150d8534-7904-4637-9ad4-a344d1d8aef5 done after 1 round(s), tokens=17934/100 trace_id=66d2d05ec4c1453b
+2026-08-17T07:52:01.642205Z [info     ] WorkflowService: saved id=f3dbd0d4-df40-429c-bfc5-07a918776ce1 conv=93d3bb8f-b812-477e-9cec-0ff2f9193790 threads=1 trace_id=7dbe911a6b3b4c67
+2026-08-17T07:52:01.644072Z [info     ] request method=POST path=/api/v1/workflows status=201 elapsed_ms=14.0 trace_id=7dbe911a6b3b4c67
+INFO:     127.0.0.1:54887 - "POST /api/v1/workflows HTTP/1.1" 201 Created
+2026-08-17T07:52:01.645891Z [info     ] request method=GET path=/api/v1/agents status=200 elapsed_ms=36.9 trace_id=25ee689e3f9041b5
+INFO:     127.0.0.1:54884 - "GET /api/v1/agents HTTP/1.1" 200 OK
+2026-08-17T08:36:38.062856Z [info     ] request method=GET path=/api/v1/agents status=200 elapsed_ms=118.9 trace_id=3801dcfe96b64d6d
+INFO:     127.0.0.1:62722 - "GET /api/v1/agents HTTP/1.1" 200 OK
+2026-08-17T08:36:39.552429Z [info     ] request method=GET path=/api/v1/skills status=200 elapsed_ms=23.6 trace_id=1411f1f17f0d450e
+INFO:     127.0.0.1:62732 - "GET /api/v1/skills HTTP/1.1" 200 OK
+2026-08-17T08:36:39.553311Z [info     ] request method=GET path=/api/v1/mcp-servers status=200 elapsed_ms=23.2 trace_id=41ea99a9d14e4a57
+INFO:     127.0.0.1:62734 - "GET /api/v1/mcp-servers HTTP/1.1" 200 OK
+2026-08-17T08:36:39.554780Z [info     ] request method=GET path=/api/v1/agents/agent-brm-builtin status=200 elapsed_ms=24.1 trace_id=68f6cb67871a433d
+INFO:     127.0.0.1:62735 - "GET /api/v1/agents/agent-brm-builtin HTTP/1.1" 200 OK
+2026-08-17T08:36:39.579387Z [info     ] request method=GET path=/api/v1/mcp-servers status=200 elapsed_ms=6.1 trace_id=11900eae784f4b7f
+INFO:     127.0.0.1:62741 - "GET /api/v1/mcp-servers HTTP/1.1" 200 OK
+2026-08-17T08:36:39.580713Z [info     ] request method=GET path=/api/v1/skills status=200 elapsed_ms=7.6 trace_id=123b67213e8e4cac
+INFO:     127.0.0.1:62740 - "GET /api/v1/skills HTTP/1.1" 200 OK
+2026-08-17T09:26:20.286848Z [info     ] request method=GET path=/api/v1/skills status=200 elapsed_ms=130.9 trace_id=2154b8f4c65c4e43
+INFO:     127.0.0.1:54427 - "GET /api/v1/skills HTTP/1.1" 200 OK
+2026-08-17T09:26:20.287688Z [info     ] request method=GET path=/api/v1/mcp-servers status=200 elapsed_ms=128.1 trace_id=8084c2cd879a44cc
+INFO:     127.0.0.1:54428 - "GET /api/v1/mcp-servers HTTP/1.1" 200 OK
+2026-08-17T09:26:20.297644Z [info     ] request method=GET path=/api/v1/agents status=200 elapsed_ms=143.5 trace_id=1cbf0bae5f36449c
+INFO:     127.0.0.1:54426 - "GET /api/v1/agents HTTP/1.1" 200 OK
+2026-08-17T10:51:14.973794Z [info     ] request method=GET path=/api/v1/conversations status=200 elapsed_ms=167.0 trace_id=6e5245ebbfd94e38
+INFO:     127.0.0.1:56551 - "GET /api/v1/conversations?limit=200 HTTP/1.1" 200 OK
+2026-08-17T10:51:15.912654Z [info     ] request method=GET path=/api/v1/conversations/93d3bb8f-b812-477e-9cec-0ff2f9193790 status=200 elapsed_ms=6.5 trace_id=429bf8eded9e4c05
+INFO:     127.0.0.1:56557 - "GET /api/v1/conversations/93d3bb8f-b812-477e-9cec-0ff2f9193790 HTTP/1.1" 200 OK
+2026-08-17T10:51:15.925586Z [info     ] request method=GET path=/api/v1/conversations/93d3bb8f-b812-477e-9cec-0ff2f9193790/messages status=200 elapsed_ms=8.3 trace_id=92fd00dc3adc4096
+INFO:     127.0.0.1:56559 - "GET /api/v1/conversations/93d3bb8f-b812-477e-9cec-0ff2f9193790/messages HTTP/1.1" 200 OK
+2026-08-17T10:51:15.954328Z [info     ] request method=GET path=/api/v1/chat/stream/93d3bb8f-b812-477e-9cec-0ff2f9193790 status=200 elapsed_ms=18.3 trace_id=9dddf04ed9cb4d99
+INFO:     127.0.0.1:56562 - "GET /api/v1/chat/stream/93d3bb8f-b812-477e-9cec-0ff2f9193790?after_message_id=17be7d5b-3710-4853-9d21-bb5eba5d0f8f HTTP/1.1" 200 OK
+2026-08-17T10:51:15.979372Z [info     ] request method=GET path=/api/v1/agents status=200 elapsed_ms=18.6 trace_id=de2d15b10b164576
+INFO:     127.0.0.1:56566 - "GET /api/v1/agents HTTP/1.1" 200 OK
+2026-08-17T10:51:16.554923Z [info     ] request method=GET path=/api/v1/conversations/3c8c21a6-cf17-47b3-8a7b-f12bd1bed731 status=200 elapsed_ms=8.5 trace_id=a271227863cd4033
+INFO:     127.0.0.1:56569 - "GET /api/v1/conversations/3c8c21a6-cf17-47b3-8a7b-f12bd1bed731 HTTP/1.1" 200 OK
+2026-08-17T10:51:16.574409Z [info     ] request method=GET path=/api/v1/conversations/3c8c21a6-cf17-47b3-8a7b-f12bd1bed731/messages status=200 elapsed_ms=10.8 trace_id=e8d515c57e3f4270
+INFO:     127.0.0.1:56572 - "GET /api/v1/conversations/3c8c21a6-cf17-47b3-8a7b-f12bd1bed731/messages HTTP/1.1" 200 OK
+2026-08-17T10:51:16.639732Z [info     ] request method=GET path=/api/v1/agents status=200 elapsed_ms=36.8 trace_id=aea5e02be2cf49a8
+INFO:     127.0.0.1:56575 - "GET /api/v1/agents HTTP/1.1" 200 OK
+2026-08-17T10:51:16.680570Z [info     ] request method=GET path=/api/v1/chat/stream/3c8c21a6-cf17-47b3-8a7b-f12bd1bed731 status=200 elapsed_ms=6.4 trace_id=808a2b6213294e37
+INFO:     127.0.0.1:56578 - "GET /api/v1/chat/stream/3c8c21a6-cf17-47b3-8a7b-f12bd1bed731?after_message_id=0e84b1c1-d677-42db-beed-2d70008a240a HTTP/1.1" 200 OK
+2026-08-17T10:51:18.133057Z [info     ] request method=GET path=/api/v1/conversations/ab238cca-8590-4e2c-9f3e-7ed968c4b355 status=200 elapsed_ms=39.2 trace_id=051373cb06c8433c
+INFO:     127.0.0.1:56591 - "GET /api/v1/conversations/ab238cca-8590-4e2c-9f3e-7ed968c4b355 HTTP/1.1" 200 OK
+2026-08-17T10:51:18.155273Z [info     ] request method=GET path=/api/v1/conversations/ab238cca-8590-4e2c-9f3e-7ed968c4b355/messages status=200 elapsed_ms=14.2 trace_id=7d4c47c6d14b424c
+INFO:     127.0.0.1:56595 - "GET /api/v1/conversations/ab238cca-8590-4e2c-9f3e-7ed968c4b355/messages HTTP/1.1" 200 OK
+2026-08-17T10:51:18.210067Z [info     ] request method=GET path=/api/v1/agents status=200 elapsed_ms=21.3 trace_id=4b06f0016f1543d3
+INFO:     127.0.0.1:56599 - "GET /api/v1/agents HTTP/1.1" 200 OK
+2026-08-17T10:51:18.271029Z [info     ] request method=GET path=/api/v1/chat/stream/ab238cca-8590-4e2c-9f3e-7ed968c4b355 status=200 elapsed_ms=8.0 trace_id=2d407e7cce4d4537
+INFO:     127.0.0.1:56602 - "GET /api/v1/chat/stream/ab238cca-8590-4e2c-9f3e-7ed968c4b355?after_message_id=05567efc-6010-434a-81da-d0a0bdedb1ca HTTP/1.1" 200 OK
+2026-08-17T10:51:23.097670Z [info     ] request method=POST path=/api/v1/chat status=200 elapsed_ms=115.2 trace_id=c6d52004f4944d00
+INFO:     127.0.0.1:56621 - "POST /api/v1/chat HTTP/1.1" 200 OK
+2026-08-17T10:51:23.147462Z [info     ] request method=GET path=/api/v1/agents status=200 elapsed_ms=19.1 trace_id=2c2e7ea514af4404
+INFO:     127.0.0.1:56627 - "GET /api/v1/agents HTTP/1.1" 200 OK
+2026-08-17T10:51:23.867662Z [error    ] orchestrator loop 36e8aa7f-4de4-41cb-a213-90a6411ce579 failed trace_id=c6d52004f4944d00
+Traceback (most recent call last):
+  File "/Users/I605212/Desktop/AgentHub-AllInOne/backend/services/orchestrator/service.py", line 207, in start_loop
+    total_tokens_in, total_tokens_out = await self._agent_loop(
+                                        ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/I605212/Desktop/AgentHub-AllInOne/backend/services/orchestrator/service.py", line 422, in _agent_loop
+    response = await llm_client.chat_completion(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/I605212/Desktop/AgentHub-AllInOne/backend/services/orchestrator/llm_client.py", line 92, in chat_completion
+    response = await self._client.messages.create(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/I605212/Desktop/AgentHub-AllInOne/backend/.venv/lib/python3.11/site-packages/anthropic/resources/messages/messages.py", line 2543, in create
+    return await self._post(
+           ^^^^^^^^^^^^^^^^^
+  File "/Users/I605212/Desktop/AgentHub-AllInOne/backend/.venv/lib/python3.11/site-packages/anthropic/_base_client.py", line 2276, in post
+    return await self.request(cast_to, opts, stream=stream, stream_cls=stream_cls)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/I605212/Desktop/AgentHub-AllInOne/backend/.venv/lib/python3.11/site-packages/anthropic/_base_client.py", line 1941, in request
+    raise self._make_status_error_from_response(response) from None
+anthropic.AuthenticationError: Jwt is expired
+2026-08-17T10:51:23.978440Z [info     ] WorkflowService: saved id=d55ab022-67b4-4cec-85b0-b9175b50f10a conv=ab238cca-8590-4e2c-9f3e-7ed968c4b355 threads=1 trace_id=bbccb1b67dc44120
+2026-08-17T10:51:23.979758Z [info     ] request method=POST path=/api/v1/workflows status=201 elapsed_ms=18.0 trace_id=bbccb1b67dc44120
+INFO:     127.0.0.1:56635 - "POST /api/v1/workflows HTTP/1.1" 201 Created
+2026-08-17T10:51:28.295936Z [info     ] request method=GET path=/api/v1/workflows status=200 elapsed_ms=20.5 trace_id=be525d33916b42a8
+INFO:     127.0.0.1:56655 - "GET /api/v1/workflows?conversation_id=ab238cca-8590-4e2c-9f3e-7ed968c4b355&limit=20 HTTP/1.1" 200 OK
+2026-08-17T10:51:28.317994Z [info     ] request method=GET path=/api/v1/agents status=200 elapsed_ms=42.4 trace_id=1d705a0640ca40c0
+INFO:     127.0.0.1:56656 - "GET /api/v1/agents HTTP/1.1" 200 OK
+2026-08-17T10:51:33.196085Z [info     ] request method=GET path=/api/v1/conversations status=200 elapsed_ms=26.4 trace_id=ec05cf55e44047a7
+INFO:     127.0.0.1:56693 - "GET /api/v1/conversations?limit=200 HTTP/1.1" 200 OK
+2026-08-17T10:51:33.196864Z [info     ] request method=GET path=/api/v1/conversations/ab238cca-8590-4e2c-9f3e-7ed968c4b355 status=200 elapsed_ms=25.9 trace_id=1db6a7b898df4818
+INFO:     127.0.0.1:56695 - "GET /api/v1/conversations/ab238cca-8590-4e2c-9f3e-7ed968c4b355 HTTP/1.1" 200 OK
+2026-08-17T10:51:33.212744Z [info     ] request method=GET path=/api/v1/agents status=200 elapsed_ms=42.4 trace_id=9ffe545ab79a4424
+INFO:     127.0.0.1:56694 - "GET /api/v1/agents HTTP/1.1" 200 OK
+2026-08-17T10:51:33.223420Z [info     ] request method=GET path=/api/v1/conversations/ab238cca-8590-4e2c-9f3e-7ed968c4b355/messages status=200 elapsed_ms=8.3 trace_id=2fff778e3de34d0c
+INFO:     127.0.0.1:56697 - "GET /api/v1/conversations/ab238cca-8590-4e2c-9f3e-7ed968c4b355/messages HTTP/1.1" 200 OK
+2026-08-17T10:51:33.274195Z [info     ] request method=GET path=/api/v1/chat/stream/ab238cca-8590-4e2c-9f3e-7ed968c4b355 status=200 elapsed_ms=20.7 trace_id=8fa11514d32547f0
+INFO:     127.0.0.1:56701 - "GET /api/v1/chat/stream/ab238cca-8590-4e2c-9f3e-7ed968c4b355?after_message_id=05567efc-6010-434a-81da-d0a0bdedb1ca HTTP/1.1" 200 OK
+2026-08-17T10:51:33.287551Z [info     ] request method=GET path=/api/v1/agents status=200 elapsed_ms=34.3 trace_id=76e07cc8596a4c0f
+INFO:     127.0.0.1:56700 - "GET /api/v1/agents HTTP/1.1" 200 OK
+2026-08-17T10:51:40.395853Z [info     ] request method=POST path=/api/v1/chat status=200 elapsed_ms=70.5 trace_id=fef4a56d08084a74
+INFO:     127.0.0.1:56727 - "POST /api/v1/chat HTTP/1.1" 200 OK
+2026-08-17T10:51:40.444191Z [info     ] request method=GET path=/api/v1/agents status=200 elapsed_ms=16.7 trace_id=31e49ea93784447d
+INFO:     127.0.0.1:56733 - "GET /api/v1/agents HTTP/1.1" 200 OK
+2026-08-17T10:51:44.301470Z [info     ] orchestrator 5084e4d7-0148-43bf-bd8e-fee45cce238c done after 1 round(s), tokens=18407/67 trace_id=fef4a56d08084a74
+2026-08-17T10:51:44.342891Z [info     ] WorkflowService: saved id=c7aa0edf-19ca-4fdb-952e-32ef09f937c3 conv=ab238cca-8590-4e2c-9f3e-7ed968c4b355 threads=1 trace_id=5e54b4b5bd36448e
+2026-08-17T10:51:44.344773Z [info     ] request method=POST path=/api/v1/workflows status=201 elapsed_ms=15.0 trace_id=5e54b4b5bd36448e
+INFO:     127.0.0.1:56749 - "POST /api/v1/workflows HTTP/1.1" 201 Created
+2026-08-17T10:51:44.352380Z [info     ] request method=GET path=/api/v1/agents status=200 elapsed_ms=29.5 trace_id=8886eb50adbb4854
+INFO:     127.0.0.1:56746 - "GET /api/v1/agents HTTP/1.1" 200 OK
+2026-08-17T11:27:25.436967Z [info     ] request method=GET path=/api/v1/conversations status=200 elapsed_ms=64.7 trace_id=89b00adbea0a48c0
+INFO:     127.0.0.1:64092 - "GET /api/v1/conversations?limit=200 HTTP/1.1" 200 OK
+2026-08-17T11:27:25.438808Z [info     ] request method=GET path=/api/v1/conversations/ab238cca-8590-4e2c-9f3e-7ed968c4b355 status=200 elapsed_ms=61.1 trace_id=148ce78e871b4561
+INFO:     127.0.0.1:64094 - "GET /api/v1/conversations/ab238cca-8590-4e2c-9f3e-7ed968c4b355 HTTP/1.1" 200 OK
+2026-08-17T11:27:25.449463Z [info     ] request method=GET path=/api/v1/agents status=200 elapsed_ms=77.4 trace_id=65c75aef66cc419b
+INFO:     127.0.0.1:64093 - "GET /api/v1/agents HTTP/1.1" 200 OK
+2026-08-17T11:27:25.473459Z [info     ] request method=GET path=/api/v1/conversations/ab238cca-8590-4e2c-9f3e-7ed968c4b355/messages status=200 elapsed_ms=9.9 trace_id=ec36633e5f654e67
+INFO:     127.0.0.1:64103 - "GET /api/v1/conversations/ab238cca-8590-4e2c-9f3e-7ed968c4b355/messages HTTP/1.1" 200 OK
+2026-08-17T11:27:25.513621Z [info     ] request method=GET path=/api/v1/chat/stream/ab238cca-8590-4e2c-9f3e-7ed968c4b355 status=200 elapsed_ms=15.9 trace_id=ba7f30054f4d4e49
+INFO:     127.0.0.1:64107 - "GET /api/v1/chat/stream/ab238cca-8590-4e2c-9f3e-7ed968c4b355?after_message_id=18187cc1-d5d2-439b-baa7-364e47f774cc HTTP/1.1" 200 OK
+2026-08-17T11:27:25.531794Z [info     ] request method=GET path=/api/v1/agents status=200 elapsed_ms=41.9 trace_id=386bbdbd908f4765
+INFO:     127.0.0.1:64105 - "GET /api/v1/agents HTTP/1.1" 200 OK
+2026-08-17T11:27:28.619512Z [info     ] request method=GET path=/api/v1/chat/stream/ab238cca-8590-4e2c-9f3e-7ed968c4b355 status=200 elapsed_ms=13.9 trace_id=2ba80a5dbf364898
+INFO:     127.0.0.1:64143 - "GET /api/v1/chat/stream/ab238cca-8590-4e2c-9f3e-7ed968c4b355?after_message_id=18187cc1-d5d2-439b-baa7-364e47f774cc HTTP/1.1" 200 OK
+2026-08-17T11:31:27.197938Z [info     ] request method=GET path=/api/v1/chat/stream/ab238cca-8590-4e2c-9f3e-7ed968c4b355 status=200 elapsed_ms=32.8 trace_id=fdc5bc5ad97f492d
+INFO:     127.0.0.1:64937 - "GET /api/v1/chat/stream/ab238cca-8590-4e2c-9f3e-7ed968c4b355?after_message_id=18187cc1-d5d2-439b-baa7-364e47f774cc HTTP/1.1" 200 OK
+2026-08-17T12:09:54.641740Z [info     ] request method=GET path=/api/v1/conversations status=200 elapsed_ms=181.9 trace_id=8901d7a41ed04032
+INFO:     127.0.0.1:54732 - "GET /api/v1/conversations?limit=200 HTTP/1.1" 200 OK
+2026-08-17T12:09:54.642814Z [info     ] request method=GET path=/api/v1/conversations/ab238cca-8590-4e2c-9f3e-7ed968c4b355 status=200 elapsed_ms=176.4 trace_id=6ef6abc9f7a648fc
+INFO:     127.0.0.1:54734 - "GET /api/v1/conversations/ab238cca-8590-4e2c-9f3e-7ed968c4b355 HTTP/1.1" 200 OK
+2026-08-17T12:09:54.660093Z [info     ] request method=GET path=/api/v1/agents status=200 elapsed_ms=199.2 trace_id=bda34a2922fd4f5e
+INFO:     127.0.0.1:54733 - "GET /api/v1/agents HTTP/1.1" 200 OK
+2026-08-17T12:09:54.711443Z [info     ] request method=GET path=/api/v1/conversations/ab238cca-8590-4e2c-9f3e-7ed968c4b355/messages status=200 elapsed_ms=11.0 trace_id=3d5916a86b8a4635
+INFO:     127.0.0.1:54744 - "GET /api/v1/conversations/ab238cca-8590-4e2c-9f3e-7ed968c4b355/messages HTTP/1.1" 200 OK
+2026-08-17T12:09:54.816723Z [info     ] request method=GET path=/api/v1/chat/stream/ab238cca-8590-4e2c-9f3e-7ed968c4b355 status=200 elapsed_ms=12.9 trace_id=acdb0eec10884fdf
+INFO:     127.0.0.1:54754 - "GET /api/v1/chat/stream/ab238cca-8590-4e2c-9f3e-7ed968c4b355?after_message_id=18187cc1-d5d2-439b-baa7-364e47f774cc HTTP/1.1" 200 OK
+2026-08-17T12:09:54.832037Z [info     ] request method=GET path=/api/v1/agents status=200 elapsed_ms=28.7 trace_id=f4b58342c5c24c0f
+INFO:     127.0.0.1:54753 - "GET /api/v1/agents HTTP/1.1" 200 OK
+2026-08-18T02:55:53.973266Z [info     ] request method=GET path=/api/v1/conversations status=200 elapsed_ms=152.5 trace_id=300743bfaba84a72
+INFO:     127.0.0.1:56832 - "GET /api/v1/conversations?limit=200 HTTP/1.1" 200 OK
+2026-08-18T02:55:53.974107Z [info     ] request method=GET path=/api/v1/conversations/ab238cca-8590-4e2c-9f3e-7ed968c4b355 status=200 elapsed_ms=148.4 trace_id=52fedc4772024354
+INFO:     127.0.0.1:56834 - "GET /api/v1/conversations/ab238cca-8590-4e2c-9f3e-7ed968c4b355 HTTP/1.1" 200 OK
+2026-08-18T02:55:53.988291Z [info     ] request method=GET path=/api/v1/agents status=200 elapsed_ms=167.2 trace_id=44da9c129d414d5a
+INFO:     127.0.0.1:56833 - "GET /api/v1/agents HTTP/1.1" 200 OK
+2026-08-18T02:55:54.040881Z [info     ] request method=GET path=/api/v1/conversations/ab238cca-8590-4e2c-9f3e-7ed968c4b355/messages status=200 elapsed_ms=8.9 trace_id=9ef3a1d595d6436e
+INFO:     127.0.0.1:56848 - "GET /api/v1/conversations/ab238cca-8590-4e2c-9f3e-7ed968c4b355/messages HTTP/1.1" 200 OK
+2026-08-18T02:55:54.123985Z [info     ] request method=GET path=/api/v1/chat/stream/ab238cca-8590-4e2c-9f3e-7ed968c4b355 status=200 elapsed_ms=9.9 trace_id=a3ceb5171be24069
+INFO:     127.0.0.1:56854 - "GET /api/v1/chat/stream/ab238cca-8590-4e2c-9f3e-7ed968c4b355?after_message_id=18187cc1-d5d2-439b-baa7-364e47f774cc HTTP/1.1" 200 OK
+2026-08-18T02:55:54.133071Z [info     ] request method=GET path=/api/v1/agents status=200 elapsed_ms=22.1 trace_id=d250ebf9b984468e
+INFO:     127.0.0.1:56851 - "GET /api/v1/agents HTTP/1.1" 200 OK
+2026-08-18T03:49:21.212827Z [info     ] request method=GET path=/api/v1/conversations status=200 elapsed_ms=40.8 trace_id=6341144d249142c0
+INFO:     127.0.0.1:60793 - "GET /api/v1/conversations?limit=200 HTTP/1.1" 200 OK
+2026-08-18T03:49:21.213490Z [info     ] request method=GET path=/api/v1/conversations/ab238cca-8590-4e2c-9f3e-7ed968c4b355 status=200 elapsed_ms=37.5 trace_id=5bfbbc7f5f184253
+INFO:     127.0.0.1:60795 - "GET /api/v1/conversations/ab238cca-8590-4e2c-9f3e-7ed968c4b355 HTTP/1.1" 200 OK
+2026-08-18T03:49:21.222709Z [info     ] request method=GET path=/api/v1/agents status=200 elapsed_ms=50.8 trace_id=434d3b0c261e47ec
+INFO:     127.0.0.1:60794 - "GET /api/v1/agents HTTP/1.1" 200 OK
+2026-08-18T03:49:21.251923Z [info     ] request method=GET path=/api/v1/conversations/ab238cca-8590-4e2c-9f3e-7ed968c4b355/messages status=200 elapsed_ms=8.3 trace_id=bc7a5da8350b4283
+INFO:     127.0.0.1:60798 - "GET /api/v1/conversations/ab238cca-8590-4e2c-9f3e-7ed968c4b355/messages HTTP/1.1" 200 OK
+2026-08-18T03:49:21.351130Z [info     ] request method=GET path=/api/v1/chat/stream/ab238cca-8590-4e2c-9f3e-7ed968c4b355 status=200 elapsed_ms=8.9 trace_id=acb2dbc132d544de
+INFO:     127.0.0.1:60806 - "GET /api/v1/chat/stream/ab238cca-8590-4e2c-9f3e-7ed968c4b355?after_message_id=18187cc1-d5d2-439b-baa7-364e47f774cc HTTP/1.1" 200 OK
+2026-08-18T03:49:21.358838Z [info     ] request method=GET path=/api/v1/agents status=200 elapsed_ms=22.1 trace_id=fd051eab666e4625
+INFO:     127.0.0.1:60803 - "GET /api/v1/agents HTTP/1.1" 200 OK
+2026-08-18T04:07:10.429751Z [info     ] request method=GET path=/api/v1/conversations status=200 elapsed_ms=175.8 trace_id=c5dbad3456c744c3
+INFO:     127.0.0.1:61189 - "GET /api/v1/conversations?limit=200 HTTP/1.1" 200 OK
+2026-08-18T04:07:10.430421Z [info     ] request method=GET path=/api/v1/conversations/ab238cca-8590-4e2c-9f3e-7ed968c4b355 status=200 elapsed_ms=171.1 trace_id=d065ecaea2e048f6
+INFO:     127.0.0.1:61191 - "GET /api/v1/conversations/ab238cca-8590-4e2c-9f3e-7ed968c4b355 HTTP/1.1" 200 OK
+2026-08-18T04:07:10.447280Z [info     ] request method=GET path=/api/v1/agents status=200 elapsed_ms=192.2 trace_id=93b0041108734032
+INFO:     127.0.0.1:61190 - "GET /api/v1/agents HTTP/1.1" 200 OK
+2026-08-18T04:07:10.494165Z [info     ] request method=GET path=/api/v1/conversations/ab238cca-8590-4e2c-9f3e-7ed968c4b355/messages status=200 elapsed_ms=9.9 trace_id=251a24acd261486f
+INFO:     127.0.0.1:61203 - "GET /api/v1/conversations/ab238cca-8590-4e2c-9f3e-7ed968c4b355/messages HTTP/1.1" 200 OK
+2026-08-18T04:07:10.773888Z [info     ] request method=GET path=/api/v1/chat/stream/ab238cca-8590-4e2c-9f3e-7ed968c4b355 status=200 elapsed_ms=15.2 trace_id=eea59799acff4549
+INFO:     127.0.0.1:61210 - "GET /api/v1/chat/stream/ab238cca-8590-4e2c-9f3e-7ed968c4b355?after_message_id=18187cc1-d5d2-439b-baa7-364e47f774cc HTTP/1.1" 200 OK
+2026-08-18T04:07:10.789133Z [info     ] request method=GET path=/api/v1/agents status=200 elapsed_ms=42.0 trace_id=a6a8e5dacde4441f
+INFO:     127.0.0.1:61206 - "GET /api/v1/agents HTTP/1.1" 200 OK
+2026-08-18T06:28:32.112677Z [info     ] request method=GET path=/api/v1/conversations status=200 elapsed_ms=163.7 trace_id=6c376030f17846dc
+INFO:     127.0.0.1:50522 - "GET /api/v1/conversations?limit=200 HTTP/1.1" 200 OK
+2026-08-18T06:28:32.117224Z [info     ] request method=GET path=/api/v1/conversations/ab238cca-8590-4e2c-9f3e-7ed968c4b355 status=200 elapsed_ms=165.9 trace_id=dd876976458b4df9
+INFO:     127.0.0.1:50524 - "GET /api/v1/conversations/ab238cca-8590-4e2c-9f3e-7ed968c4b355 HTTP/1.1" 200 OK
+2026-08-18T06:28:32.131767Z [info     ] request method=GET path=/api/v1/agents status=200 elapsed_ms=184.6 trace_id=69a1769d7168496d
+INFO:     127.0.0.1:50523 - "GET /api/v1/agents HTTP/1.1" 200 OK
+2026-08-18T06:28:32.185872Z [info     ] request method=GET path=/api/v1/conversations/ab238cca-8590-4e2c-9f3e-7ed968c4b355/messages status=200 elapsed_ms=9.9 trace_id=056af4926e314e98
+INFO:     127.0.0.1:50534 - "GET /api/v1/conversations/ab238cca-8590-4e2c-9f3e-7ed968c4b355/messages HTTP/1.1" 200 OK
+2026-08-18T06:28:32.318273Z [info     ] request method=GET path=/api/v1/chat/stream/ab238cca-8590-4e2c-9f3e-7ed968c4b355 status=200 elapsed_ms=25.5 trace_id=ba5b222a1ee0407f
+INFO:     127.0.0.1:50539 - "GET /api/v1/chat/stream/ab238cca-8590-4e2c-9f3e-7ed968c4b355?after_message_id=18187cc1-d5d2-439b-baa7-364e47f774cc HTTP/1.1" 200 OK
+2026-08-18T06:28:32.349716Z [info     ] request method=GET path=/api/v1/agents status=200 elapsed_ms=57.1 trace_id=a32699212c794966
+INFO:     127.0.0.1:50540 - "GET /api/v1/agents HTTP/1.1" 200 OK
+2026-08-18T07:49:35.321378Z [info     ] request method=GET path=/api/v1/conversations status=401 elapsed_ms=33.0 trace_id=d5972ac8e6764f5c
+INFO:     127.0.0.1:61718 - "GET /api/v1/conversations?limit=200 HTTP/1.1" 401 Unauthorized
+2026-08-18T07:49:35.322462Z [info     ] request method=GET path=/api/v1/agents status=401 elapsed_ms=34.2 trace_id=505599e5cb9d48b8
+INFO:     127.0.0.1:61719 - "GET /api/v1/agents HTTP/1.1" 401 Unauthorized
+2026-08-18T07:49:35.322651Z [info     ] request method=GET path=/api/v1/conversations/ab238cca-8590-4e2c-9f3e-7ed968c4b355 status=401 elapsed_ms=29.7 trace_id=458b0d125bb54d99
+INFO:     127.0.0.1:61720 - "GET /api/v1/conversations/ab238cca-8590-4e2c-9f3e-7ed968c4b355 HTTP/1.1" 401 Unauthorized
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+2026-08-18T08:45:24.199849Z [info     ] AgentHub backend shutting down...
+2026-08-18T08:45:24.216031Z [info     ] Backend shutdown complete
+INFO:     Application shutdown complete.
+INFO:     Finished server process [44255]
+INFO:     Stopping reloader process [43461]

@@ -18,9 +18,6 @@ DockerRuntimeService —— 会话级 Docker 容器调度 + reverse proxy 后端
 - 模块级单例(get_docker_runtime),所有 conversation 共用
 - 容器命名 agenthub-{conv_id 前 12 位}, 由 conv_id 唯一映射
 
-队伍:咕嘎一辈子队
-修改者:咕嘎
-修改日期:2026-06-04
 """
 
 from __future__ import annotations

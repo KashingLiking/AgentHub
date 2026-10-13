@@ -6,7 +6,6 @@ StreamEventBuffer —— Redis 事件缓冲(刷新回放用)
 - 支持按 message_id 回放该消息之后的所有事件
 - 自动清理过期数据(TTL)
 
-队伍:咕嘎一辈子队
 """
 
 import json

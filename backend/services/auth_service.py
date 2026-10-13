@@ -16,9 +16,6 @@ auth_service.py —— 鉴权业务核心
 - token payload 字段最小化:sub(user_id)、jti、exp、iat、type;
   username 也带上一份(给 middleware 早期日志用),但前端能信任的只有 sub。
 
-队伍:咕嘎一辈子队
-修改者:咕嘎
-修改日期:2026-06-08
 """
 
 from __future__ import annotations

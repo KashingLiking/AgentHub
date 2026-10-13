@@ -10,9 +10,6 @@ FastAPI 应用入口
    - adapter_registry.shutdown(关 MCP 连接等)
    - 数据库引擎 dispose
 
-队伍:咕嘎一辈子队
-修改者:Adam Zhang
-修改日期:2026-05-29
 """
 
 from __future__ import annotations

@@ -48,9 +48,6 @@ system_prompt handling:
     the structured body as task content. ClaudeAdapter / CodexAdapter don't
     need this dance — they have dedicated CLI flags for system prompts.
 
-队伍：咕嘎一辈子队
-修改者：lp
-修改日期：2026-05-27
 """
 from __future__ import annotations
 

@@ -3,9 +3,6 @@ Alembic 迁移环境配置。
 
 读取项目 settings.DB_URL,自动发现 backend.models 下所有 ORM 类。
 
-队伍:咕嘎一辈子队
-修改者:Adam Zhang
-修改日期:2026-05-25
 """
 
 import sys

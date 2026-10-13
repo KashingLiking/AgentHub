@@ -10,9 +10,6 @@
   approval._publish_approval_block:
     - 创建 ApprovalBlock 消息 + 推 SSE BlockStartEvent
 
-队伍:咕嘎一辈子队
-修改者:Adam Zhang
-修改日期:2026-05-29
 """
 
 from __future__ import annotations

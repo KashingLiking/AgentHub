@@ -10,9 +10,6 @@ mcp_servers — MCP 服务器配置表
 - url/headers: sse 专用
 - is_public/is_active: 可见性控制，与 Skill 一致
 
-队伍：咕嘎一辈子队
-修改者：Musuyin
-修改日期：2026-06-08
 """
 
 from sqlalchemy import Column, String, JSON, SmallInteger, Enum, Index, TIMESTAMP, func

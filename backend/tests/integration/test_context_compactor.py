@@ -4,9 +4,6 @@ context_compactor 三层压缩策略测试
 被测对象不 mock,只在系统边界(chat_completion / count_tokens)拦截真 LLM 调用。
 真 LLM 摘要质量预览见 scripts/preview_compactor.py。
 
-队伍:咕嘎一辈子队
-修改者:Adam Zhang
-修改日期:2026-05-28
 """
 
 from __future__ import annotations

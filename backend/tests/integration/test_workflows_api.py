@@ -15,7 +15,6 @@ Workflows API 集成测试 — SQLite in-memory，不依赖真实 DB / Redis / L
   - 缺少 conversation_id 参数返回 422
   - threads 为空列表也允许存储
 
-队伍：咕嘎一辈子队
 """
 from __future__ import annotations
 

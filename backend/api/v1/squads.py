@@ -14,7 +14,6 @@ GET /api/v1/squads/{squad_id}  返回单个小组详情（含参与 Agent 的完
     "agent_ids": ["agent-coder-builtin", ...]
   }
 
-队伍：咕嘎一辈子队
 """
 
 from __future__ import annotations

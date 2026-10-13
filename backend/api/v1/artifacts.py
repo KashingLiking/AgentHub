@@ -3,7 +3,6 @@ api/v1/artifacts.py —— 产物操作端点
 
 POST /api/v1/artifacts/diff/apply   一键应用 Diff CodeBlock 到本地文件
 
-队伍：咕嘎一辈子队
 """
 
 from __future__ import annotations

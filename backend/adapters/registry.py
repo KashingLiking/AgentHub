@@ -3,9 +3,6 @@
 Populated at FastAPI startup via seed_from_db(); updated by register()/unregister()
 when agents are created or deleted through agent_service.
 
-队伍：咕嘎一辈子队
-修改者：Musuyin
-修改日期：2026-06-08
 """
 from __future__ import annotations
 

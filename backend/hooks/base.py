@@ -13,9 +13,6 @@ Hook 抽象基类
 
 11 个事件覆盖:会话级、主 Agent loop 内、Adapter 层。
 
-队伍:咕嘎一辈子队
-修改者:Adam Zhang
-修改日期:2026-05-22
 """
 
 from abc import ABC, abstractmethod

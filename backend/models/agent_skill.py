@@ -6,9 +6,6 @@ agent_skills — Agent 挂载 Skill 关联表
 - 单独索引 skill_id：支持反向查询"哪些 Agent 挂了某 Skill"，用于 Skill 详情页 / 影响面分析。
 - 仅记录 created_at（关系建立时间），不需要 updated_at。
 
-队伍：咕嘎一辈子队
-修改者：Adam Zhang
-修改日期：2026-05-22
 """
 
 from sqlalchemy import Column, String, TIMESTAMP, Index, func

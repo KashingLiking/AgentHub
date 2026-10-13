@@ -12,9 +12,6 @@ Agents API 集成测试 — SQLite in-memory，不依赖真实 DB / Redis / LLM�
   POST   /api/v1/agents/build        (mock LLM)
   POST   /api/v1/agents/build/confirm
 
-队伍：咕嘎一辈子队
-修改者：Musuyin
-修改日期：2026-05-28
 """
 from __future__ import annotations
 

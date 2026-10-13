@@ -12,9 +12,6 @@ PostExecutionHook —— 工具调用后异步审计 + Diff 消息推送
 - TODO[audit]: 接通 audit_service，写 audit_logs 表
 - TODO[preview]: 识别 HTML 产物 → 调 preview_service → 推 preview URL 消息
 
-队伍：咕嘎一辈子队
-修改者：咕嘎
-修改日期:2026-05-27
 """
 
 import logging

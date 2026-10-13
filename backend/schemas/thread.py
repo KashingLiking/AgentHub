@@ -17,9 +17,6 @@ threads 相关 Pydantic DTO
 - TaskPlanItem.id 由调用方提前生成 UUID,blocked_by 引用其他 task 的 id。
 - ThreadUpdate 所有字段 Optional 默认 None,partial update 模式。
 
-队伍:咕嘎一辈子队
-修改者:Adam Zhang
-修改日期:2026-05-22
 """
 
 from datetime import datetime

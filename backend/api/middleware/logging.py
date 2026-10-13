@@ -5,9 +5,6 @@ trace_id 来源优先级:
 1. 请求 header X-Trace-Id(微服务 / 网关 / 前端可主动传递,服务端不覆盖)
 2. 服务端生成 uuid.uuid4().hex[:16]
 
-队伍:咕嘎一辈子队
-修改者:Adam Zhang
-修改日期:2026-05-28
 """
 
 from __future__ import annotations

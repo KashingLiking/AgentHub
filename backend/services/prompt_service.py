@@ -14,7 +14,4 @@ PromptService —— Prompt 模板读取 / 变量渲染
 用 backend/core/frontmatter.py(已实装)解析 metadata + 正文,
 然后用 str.replace 或 jinja2 简单替换 {{var}} 占位符。
 
-队伍:咕嘎一辈子队
-修改者:咕嘎
-修改日期:2026-05-26
 """

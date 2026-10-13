@@ -4,9 +4,6 @@ ORM 模型统一导出入口。
 集中导入所有 ORM 类，供 Alembic autogenerate 发现表结构、
 以及业务层 `from backend.models import User, Agent, ...` 简洁引用。
 
-队伍：咕嘎一辈子队
-修改者：Adam Zhang
-修改日期：2026-05-22
 """
 
 from backend.models.base import Base

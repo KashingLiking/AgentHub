@@ -13,7 +13,6 @@ workflows — 前端 workflow 视图持久化表
 
 索引 (conversation_id, created_at) 支持按时间倒序拉取。
 
-队伍：咕嘎一辈子队
 """
 
 from sqlalchemy import Column, String, JSON, TIMESTAMP, Index, func

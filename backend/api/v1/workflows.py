@@ -4,7 +4,6 @@ api/v1/workflows.py —— workflow 视图持久化端点
 POST /api/v1/workflows                                  落一行 workflow
 GET  /api/v1/workflows?conversation_id=xxx&limit=20     查询某会话历史
 
-队伍：咕嘎一辈子队
 """
 
 from __future__ import annotations

@@ -6,7 +6,6 @@ DiffService —— 构造文件变更 CodeBlock
 
 不依赖 git，只用标准库 difflib，MVP 阶段不需要真实 git 操作。
 
-队伍：咕嘎一辈子队
 """
 
 from __future__ import annotations

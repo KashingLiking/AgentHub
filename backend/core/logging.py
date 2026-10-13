@@ -25,9 +25,6 @@ core/logging —— 结构化日志配置(structlog + stdlib logging 桥接)
     import logging; log = logging.getLogger(__name__); log.info("...")
     import structlog; log = structlog.get_logger(); log.info("...", k=v)
 
-队伍:咕嘎一辈子队
-修改者:咕嘎
-修改日期:2026-05-27
 """
 
 from __future__ import annotations

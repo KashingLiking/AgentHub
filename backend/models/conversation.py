@@ -9,9 +9,6 @@ conversations — 会话表
 - message_count / unread_count 是预留计数字段。
 - 索引 (user_id, last_message_at) 支持"我的会话按最近活跃排序"主查询路径。
 
-队伍：咕嘎一辈子队
-修改者：Adam Zhang
-修改日期：2026-05-22
 """
 
 from sqlalchemy import Column, String, Enum, SmallInteger, Integer, TIMESTAMP, Index

@@ -19,9 +19,6 @@ api/deps.py —— FastAPI 依赖注入
 - 前端联调早期可以不签 JWT,先把 SSE / WS 调通。
 - 生产部署在 .env 设 AUTH_DEV_HEADER_FALLBACK=false,自动变严格模式。
 
-队伍:咕嘎一辈子队
-修改者:咕嘎(Phase B)
-修改日期:2026-06-02
 """
 
 from __future__ import annotations

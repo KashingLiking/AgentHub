@@ -12,11 +12,6 @@ AgentAdapter 抽象基类
 2. 实现 stream() —— 把底层 SDK 输出转换成 AgentEvent yield 出去
 3. 实现 get_capabilities() —— 声明该 Adapter 是否支持 diff / 审批等特性
 
-队伍:咕嘎一辈子队
-修改者:Adam Zhang
-修改日期:2026-05-22
-修改者:Musuyin
-修改日期:2026-05-25
 """
 
 from abc import ABC, abstractmethod

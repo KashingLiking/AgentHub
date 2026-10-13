@@ -1,9 +1,6 @@
 """
 统一异常处理 → 包成 {code, message, data}
 
-队伍:咕嘎一辈子队
-修改者:Adam Zhang
-修改日期:2026-05-28
 """
 
 from __future__ import annotations

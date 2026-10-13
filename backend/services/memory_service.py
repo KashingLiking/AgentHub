@@ -6,9 +6,6 @@ memory_service —— 长期记忆文件读写助手
         ├── MEMORY.md          ← 索引(一行一条)
         └── {name}.md          ← 单条记忆(YAML frontmatter + 正文)
 
-队伍:咕嘎一辈子队
-修改者:Adam Zhang
-修改日期:2026-05-25
 """
 
 import logging

@@ -1,9 +1,6 @@
 """
 SQLAlchemy 引擎 + session 工厂
 
-队伍:咕嘎一辈子队
-修改者:Adam Zhang
-修改日期:2026-06-02
 """
 
 from collections.abc import Generator

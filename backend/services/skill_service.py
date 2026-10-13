@@ -11,9 +11,6 @@ SkillService —— Skill 元数据 + 正文管理
 3. get_with_content() / get_by_name_with_content() — 读 DB content 返回 SkillWithContent
 4. create / update / delete   — 用户 Skill CRUD（纯 DB）
 
-队伍：咕嘎一辈子队
-修改者：Musuyin
-修改日期：2026-06-05
 """
 
 from __future__ import annotations

@@ -5,9 +5,6 @@ code = HTTP status code(200/400/404/422/500)
 message = 错误时填 detail,成功时空字符串
 data = 业务原响应体(object / array / scalar / null)
 
-队伍:咕嘎一辈子队
-修改者:Adam Zhang
-修改日期:2026-05-28
 """
 
 from __future__ import annotations

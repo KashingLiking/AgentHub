@@ -9,9 +9,6 @@ OrchestratorLLMClient —— 主 Agent 专用 LLM 客户端
 走 Anthropic 兼容协议(配置见 settings.EXTERNAL_API_BASE / KEY / MODEL),
 当前指向 Moonshot Kimi 的 /anthropic 端点。
 
-队伍:咕嘎一辈子队
-修改者:咕嘎
-修改日期:2026-05-26
 """
 
 from __future__ import annotations

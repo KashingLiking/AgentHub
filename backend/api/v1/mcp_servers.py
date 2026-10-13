@@ -18,9 +18,6 @@ DELETE /agents/{agent_id}/mcp-servers/{id}         卸载
 --- 可用性测试 ---
 POST   /mcp-servers/{id}/test           测试连通性，返回工具列表
 
-队伍：咕嘎一辈子队
-修改者：Musuyin
-修改日期：2026-06-08
 """
 from __future__ import annotations
 

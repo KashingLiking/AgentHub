@@ -4,7 +4,6 @@
 头像文件存储在 backend/static/avatars/ 下，由 FastAPI StaticFiles 以
 /static/avatars/avatar-N.jpg 路径提供服务。
 
-队伍：咕嘎一辈子队
 """
 
 import random

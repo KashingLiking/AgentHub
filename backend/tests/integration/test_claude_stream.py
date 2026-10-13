@@ -3,9 +3,6 @@
 Run with:
     pytest -m integration tests/integration/test_claude_stream.py -v
 
-队伍：咕嘎一辈子队
-修改者：Musuyin
-修改日期：2026-05-26
 """
 import shutil
 

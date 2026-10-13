@@ -7,9 +7,6 @@ MCPServerRepository — mcp_servers 表 + agent_mcp_servers 关联表数据访�
 
 session 由调用方注入；repo 只 add / flush，commit 由 service / route 控制。
 
-队伍：咕嘎一辈子队
-修改者：Musuyin
-修改日期：2026-06-08
 """
 
 from __future__ import annotations

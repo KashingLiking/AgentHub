@@ -16,9 +16,6 @@ orchestrator 主 Agent 调 create_file / edit_file 工具时把文件写到这�
 注:raw / download 把 path 放 query 而不是 path param,避免 FastAPI 把
 `src/a.py` 的 `/` 当路径分隔。
 
-队伍:咕嘎一辈子队
-修改者:Adam Zhang
-修改日期:2026-06-03
 """
 
 from __future__ import annotations

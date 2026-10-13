@@ -4,7 +4,6 @@ workflows 相关 Pydantic DTO
 对应数据结构:前端 stores/workflow.ts 的 WorkflowThread / WorkflowBlock。
 后端只做透传存储,不解析嵌套数据形状(blocks 字段直接走 dict[str, Any])。
 
-队伍：咕嘎一辈子队
 """
 
 from __future__ import annotations

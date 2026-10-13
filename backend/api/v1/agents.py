@@ -11,9 +11,6 @@ POST   /agents/{id}/deactivate  停用
 POST   /agents/build            LLM 辅助生成草稿（返回 session_id + draft）
 POST   /agents/build/confirm    用户确认草稿后落库（返回创建的 Agent）
 
-队伍：咕嘎一辈子队
-修改者：Musuyin
-修改日期：2026-06-08
 """
 
 from __future__ import annotations

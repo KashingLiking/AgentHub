@@ -16,9 +16,6 @@ ApprovalHook —— 高危工具审批闭环
 - _pending_approvals: dict[block_id, _PendingApproval]
 - decide() 是 WS handler 的入口，按 block_id set event
 
-队伍：咕嘎一辈子队
-修改者：咕嘎
-修改日期：2026-05-27
 """
 
 from __future__ import annotations

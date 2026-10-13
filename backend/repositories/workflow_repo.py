@@ -4,7 +4,6 @@ WorkflowRepository —— workflows 表数据访问层
 只暴露 list / create 两个核心方法,外加按 id 查询的 BaseRepository.get。
 session 由调用方注入,commit 由 service 控制。
 
-队伍：咕嘎一辈子队
 """
 
 from __future__ import annotations

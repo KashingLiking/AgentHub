@@ -1,8 +1,5 @@
 """Unit tests for seeds/agents.py — prompt file loading and seed idempotency.
 
-队伍：咕嘎一辈子队
-修改者：Musuyin
-修改日期：2026-05-28
 """
 from __future__ import annotations
 

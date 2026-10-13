@@ -12,9 +12,6 @@ api/middleware/auth.py —— JWT 鉴权辅助
 注意:本文件不直接 raise 401。401 / 403 都由 api/deps.py:get_current_user 抛 HTTPException,
 让"未带 token"和"token 无效"两种 401 走同一处理逻辑、统一被 envelope 包装。
 
-队伍:咕嘎一辈子队
-修改者:咕嘎
-修改日期:2026-06-02
 """
 
 from __future__ import annotations

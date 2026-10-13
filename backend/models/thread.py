@@ -12,9 +12,6 @@ threads — Thread 执行状态表
 - 索引 (conversation_id, agent_id, updated_at) 支持 thread_service.resume_or_create()
   快速找到某会话中某 Agent 最近的 Thread。
 
-队伍：咕嘎一辈子队
-修改者：Adam Zhang
-修改日期：2026-05-22
 """
 
 from sqlalchemy import Column, String, Text, Enum, JSON, Integer, TIMESTAMP, Index

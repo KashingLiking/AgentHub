@@ -38,9 +38,6 @@ _agent_loop 八步:
 trace_id 约定:MVP 阶段用 orchestrator thread_id 作为 trace_id 串起 Hook 调用,
 等 Step 16 (structlog) 接通后改成真 trace_id。
 
-队伍:咕嘎一辈子队
-修改者:咕嘎
-修改日期:2026-05-26
 """
 
 from __future__ import annotations

@@ -17,9 +17,6 @@ api/v1/preview.py —— 部署应用反向代理
 
 [TODO/perm]: 加 user 鉴权,校验 conv 归属当前用户
 
-队伍:咕嘎一辈子队
-修改者:咕嘎
-修改日期:2026-06-04
 """
 
 from __future__ import annotations

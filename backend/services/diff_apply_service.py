@@ -6,7 +6,6 @@ new_content（code 字段）写入对应沙箱路径（runtime/memory/{user_id}/
 
 MVP 阶段：直接写沙箱文件，不做 git commit（git 集成在后续迭代）。
 
-队伍：咕嘎一辈子队
 """
 
 from __future__ import annotations

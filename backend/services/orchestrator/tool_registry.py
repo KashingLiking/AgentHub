@@ -7,9 +7,6 @@ ToolRegistry —— 主 Agent 工具协议适配层
 - 把 LLM 的 tool_use 输出转成 handler 调用,handler 输出再包成 tool_result block
 - 提供 LLMResponse 解析助手 (结束条件判断 / tool_use 抽取)
 
-队伍:咕嘎一辈子队
-修改者:Adam Zhang
-修改日期:2026-05-25
 """
 
 from __future__ import annotations

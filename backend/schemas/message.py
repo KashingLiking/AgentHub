@@ -22,9 +22,6 @@ messages 相关 Pydantic DTO
   最终态落库为完整 blocks 数组。
 - Message ID 由应用层生成(UUID),MessageCreate 接受可选 id。
 
-队伍:咕嘎一辈子队
-修改者:Adam Zhang
-修改日期:2026-05-25
 """
 
 from datetime import datetime

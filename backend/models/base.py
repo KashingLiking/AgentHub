@@ -4,9 +4,6 @@ SQLAlchemy ORM 基类与公共 mixin。
 Base 是所有 ORM 模型的声明基类；TimestampMixin 提供 created_at / updated_at
 两个标准时间戳字段，由数据库默认值与 ON UPDATE 触发器自动维护，业务代码无需手动赋值。
 
-队伍：咕嘎一辈子队
-修改者：Adam Zhang
-修改日期：2026-05-22
 """
 
 from datetime import datetime, timezone

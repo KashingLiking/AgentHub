@@ -7,9 +7,6 @@ GET    /skills/{id}         详情（含正文）
 PATCH  /skills/{id}         更新
 DELETE /skills/{id}         删除
 
-队伍：咕嘎一辈子队
-修改者：Musuyin
-修改日期：2026-05-28
 """
 
 from __future__ import annotations

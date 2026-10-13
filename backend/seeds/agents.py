@@ -12,9 +12,6 @@
   1. 在 backend/prompts/agents/ 下新建 <key>.md（frontmatter + 正文）
   2. 在 PRESET_AGENTS 中追加一条记录
 
-队伍：咕嘎一辈子队
-修改者：Musuyin
-修改日期：2026-05-27
 """
 from __future__ import annotations
 

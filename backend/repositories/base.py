@@ -10,9 +10,6 @@ commit / rollback 由 service 层统一控制(事务边界)。
 
 软删除不在 base 提供,各 repo 用 update(id, is_deleted=True) 自行实现。
 
-队伍:咕嘎一辈子队
-修改者:Adam Zhang
-修改日期:2026-05-25
 """
 
 from typing import Any, ClassVar, Generic, Optional, TypeVar

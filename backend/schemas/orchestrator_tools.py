@@ -18,9 +18,6 @@ G. 网络(1)            FetchUrl
   让 LLM 看到的 schema 一致。
 - 路径 / 内容的"沙箱校验"由 tool handler 实现,DTO 层只做基础非空与格式校验。
 
-队伍:咕嘎一辈子队
-修改者:Adam Zhang
-修改日期:2026-05-22
 """
 
 from typing import Literal, Optional

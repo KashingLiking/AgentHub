@@ -24,9 +24,6 @@ LLM prompt 策略：
   - 用 response_format={"type":"json_object"} 强制 JSON（openai-compatible）
   - 解析失败时抛 ValueError，上层 API 层转 422
 
-队伍：咕嘎一辈子队
-修改者：Musuyin
-修改日期：2026-05-28
 """
 
 from __future__ import annotations

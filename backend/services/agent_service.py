@@ -6,9 +6,6 @@ AgentService —— Agent CRUD + 联系人视图 + 能力探测
 
 风格:**stateless façade**,模块级单例,方法内自起 SessionLocal + 自管事务。
 
-队伍:咕嘎一辈子队
-修改者:咕嘎
-修改日期:2026-05-26
 """
 
 from __future__ import annotations

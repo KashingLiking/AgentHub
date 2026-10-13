@@ -9,9 +9,6 @@ Memory 领域类型
 每条记忆 4 类:user(身份偏好) / feedback(用户纠正) / project(项目背景) /
 reference(外部参考)。
 
-队伍:咕嘎一辈子队
-修改者:Adam Zhang
-修改日期:2026-05-25
 """
 
 from datetime import datetime

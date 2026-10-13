@@ -26,9 +26,6 @@ Input Schema 唯一真相源在 backend.schemas.orchestrator_tools(A 阶段定�
 - 返回 dict(JSON 可序列化),tool_registry 会 json.dumps 成 tool_result.content
 - 错误处理由外层 dispatch_tool_call 兜底,handler 内部不 try/except
 
-队伍:咕嘎一辈子队
-修改者:咕嘎
-修改日期:2026-05-26
 """
 
 from __future__ import annotations

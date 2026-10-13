@@ -6,7 +6,6 @@ GUGA 是一个特殊的"系统所有者"用户：
 - 普通用户不能登录这个账号（password_hash 设占位值，bcrypt 永远验证失败）
 - 通过"权限校验=资源.user_id 等于当前用户 id"这一条统一规则，自然保证内置资源不可被改
 
-队伍：咕嘎一辈子队
 """
 
 from __future__ import annotations

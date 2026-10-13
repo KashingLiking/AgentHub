@@ -7,9 +7,6 @@ users — 用户表
 - email 与 last_login_at 为可选信息，用于后续找回密码 / 安全审计扩展。
 - oauth_provider / oauth_subject / oauth_tenant_id 支持第三方 OAuth2 登录（微软等）。
 
-队伍：咕嘎一辈子队
-修改者：Adam Zhang
-修改日期：2026-06-08
 """
 
 from sqlalchemy import Column, String

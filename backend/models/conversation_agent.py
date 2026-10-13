@@ -6,9 +6,6 @@ conversation_agents — 会话参与的 Agent（多对多）
 - is_active 是软删除标志：将 Agent 移出群聊时只置 0，不真删，保证历史消息中
   agent_id 仍能关联到这条记录、不丢"曾经在群里"的语义。
 
-队伍：咕嘎一辈子队
-修改者：Adam Zhang
-修改日期：2026-05-22
 """
 
 from sqlalchemy import Column, String, TIMESTAMP, SmallInteger, func

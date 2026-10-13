@@ -18,9 +18,6 @@ api/v1/chat.py —— Chat 业务 HTTP 端点
 - 防止 A 用户中止 / 偷看 B 用户的会话
 - MVP 阶段先信任传入的 user_id,等 conversation_service 加权限校验方法后接通
 
-队伍:咕嘎一辈子队
-修改者:咕嘎
-修改日期:2026-05-26
 """
 
 from __future__ import annotations

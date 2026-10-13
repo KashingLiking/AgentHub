@@ -13,9 +13,6 @@ WebSocket 用于内容流之外的双向交互(Diff 应用 / 审批决策 / Thre
 - type      —— 判别字段
 - timestamp —— 时间戳
 
-队伍:咕嘎一辈子队
-修改者:Adam Zhang
-修改日期:2026-05-22
 """
 
 from datetime import datetime

@@ -7,9 +7,6 @@ For local Ollama:
     OPENAI_BASE_URL=http://localhost:11434/v1 OPENAI_API_KEY=ollama \
     OPENAI_MODEL_ID=llama3 pytest -m integration tests/integration/test_custom_stream.py -v
 
-队伍：咕嘎一辈子队
-修改者：Musuyin
-修改日期：2026-05-23
 """
 import os
 

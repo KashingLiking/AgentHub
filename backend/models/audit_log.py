@@ -8,9 +8,6 @@ audit_logs — 审计日志表
 - trace_id 串联同一次请求的运行日志（文件）与审计日志（DB），跨系统排查时可联动检索。
 - 三个索引分别支持："某用户的操作历史"/"某类行为的发生频率"/"某资源的变更轨迹"。
 
-队伍：咕嘎一辈子队
-修改者：Adam Zhang
-修改日期：2026-05-22
 """
 
 from sqlalchemy import Column, String, JSON, TIMESTAMP, Index, func

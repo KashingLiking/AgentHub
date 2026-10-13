@@ -4,9 +4,6 @@ ReadReceiptRepository —— read_receipts 表数据访问层
 broadcast 模式下，Agent 决定不回复时调 save()，幂等写入已读回执。
 唯一约束 (message_id, agent_id) 保证重复调用安全。
 
-队伍：咕嘎一辈子队
-修改者：Adam Zhang
-修改日期：2026-06-05
 """
 from __future__ import annotations
 

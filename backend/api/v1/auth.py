@@ -20,9 +20,6 @@ api/v1/auth.py —— 鉴权端点
 - OAuth 配置未填 → 501 Not Implemented
 - OAuth state 校验失败 → 400
 
-队伍:咕嘎一辈子队
-修改者:咕嘎(Phase C)
-修改日期:2026-06-08
 """
 
 from __future__ import annotations

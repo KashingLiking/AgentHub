@@ -1,9 +1,6 @@
 """
 TraceIdMiddleware 集成测试
 
-队伍:咕嘎一辈子队
-修改者:Adam Zhang
-修改日期:2026-05-28
 """
 
 from __future__ import annotations

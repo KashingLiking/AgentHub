@@ -9,9 +9,6 @@ api/v1/ws.py —— WebSocket 端点
 连接路径：ws://host/api/v1/ws/{conversation_id}
 鉴权(MVP)：URL query param user_id（WebSocket 不支持自定义 header）
 
-队伍：咕嘎一辈子队
-修改者：I778387
-修改日期：2026-05-28
 """
 
 from __future__ import annotations

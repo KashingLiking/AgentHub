@@ -11,9 +11,6 @@ Unit tests for backend.services.auth_service.
 使用 SQLite in-memory 跑业务流测试,完全不依赖 MariaDB / Redis。
 Redis 黑名单通过 monkeypatch backend.core.redis.get_redis 注入 fake 客户端。
 
-队伍:咕嘎一辈子队
-修改者:咕嘎(Phase C)
-修改日期:2026-06-02
 """
 from __future__ import annotations
 

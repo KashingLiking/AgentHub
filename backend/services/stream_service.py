@@ -12,9 +12,6 @@ StreamService —— SSE 多路合并 + 广播
 - _sessions 用模块级全局状态,多 ThreadService / chat_service 实例共享
 - 多进程部署时换 Redis Pub/Sub,接口不变
 
-队伍:咕嘎一辈子队
-修改者:Adam Zhang
-修改日期:2026-05-25
 """
 
 import asyncio

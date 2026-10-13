@@ -28,9 +28,6 @@ Adapter 只负责把它填充到事件中,不自行生成。`block_id` 由 Adapt
     round_done          本轮所有 Agent 完成,但 SSE 连接保持打开等待排队消息
     queue_drained       该会话排队消息全部处理完毕,前端可安全关闭 SSE
 
-队伍：咕嘎一辈子队
-修改者：Adam Zhang Musuyin
-修改日期：2026-05-25
 """
 
 from datetime import datetime

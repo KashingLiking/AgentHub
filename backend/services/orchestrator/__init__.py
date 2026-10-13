@@ -6,9 +6,6 @@ chat_service 已通过 `from backend.services.orchestrator_service import ...` �
 为保证兼容,暴露一个同名常量。
 
 
-队伍:咕嘎一辈子队
-修改者:Adam Zhang
-修改日期:2026-05-25
 """
 
 from backend.services.orchestrator.context_compactor import context_compactor

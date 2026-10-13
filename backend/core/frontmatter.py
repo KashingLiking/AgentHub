@@ -11,9 +11,6 @@
 - frontmatter YAML 解析失败 → 返回 ({}, 全文) + logger.warning
 - 这样手动编辑出语法错误时,正文仍能展示,不影响列表浏览
 
-队伍:咕嘎一辈子队
-修改者:Adam Zhang
-修改日期:2026-05-25
 """
 
 import logging

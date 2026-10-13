@@ -11,9 +11,6 @@ Skills API 集成测试 — SQLite in-memory，不依赖真实文件系统（moc
 Skill 的正文存文件，测试中 mock _write_skill_file / _read_skill_content 避免
 真实文件 IO。
 
-队伍：咕嘎一辈子队
-修改者：Musuyin
-修改日期：2026-05-28
 """
 from __future__ import annotations
 

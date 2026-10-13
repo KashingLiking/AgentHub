@@ -12,9 +12,6 @@ ThreadService —— Thread 生命周期 + 任务图调度 + 子 Thread 事件�
 - pending_events 用 dict[parent_thread_id, list[Event]] 存内存
 - 上线时切 Redis 即可,接口不变
 
-队伍:咕嘎一辈子队
-修改者:Adam Zhang
-修改日期:2026-05-29
 """
 
 import asyncio

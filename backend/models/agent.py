@@ -9,9 +9,6 @@ agents — Agent 配置表
   WHERE is_active = 1 AND (user_id = :me OR is_public = 1)
 - user_id 必填；值为 'GUGA' 时表示系统内置 Agent（如内置 Claude / Codex）。
 
-队伍：咕嘎一辈子队
-修改者：Adam Zhang
-修改日期：2026-05-22
 """
 
 from sqlalchemy import Column, String, Text, Enum, JSON, SmallInteger, Index

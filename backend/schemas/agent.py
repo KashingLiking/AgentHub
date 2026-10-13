@@ -14,9 +14,6 @@ agents 相关 Pydantic DTO
 - AgentBuildDraft 是草稿本体,session_id 包在 Build Request/Response/Confirm 外层,
   不污染草稿数据。
 
-队伍:咕嘎一辈子队
-修改者:Adam Zhang
-修改日期:2026-05-22
 """
 
 from datetime import datetime

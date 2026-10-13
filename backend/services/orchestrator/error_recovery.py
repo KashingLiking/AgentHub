@@ -17,9 +17,6 @@ ErrorRecovery —— 主 Agent 三路错误恢复
 - RecoveryDecision.should_retry=False 时 _agent_loop 应该 raise,
   让 start_loop 兜底 mark_error
 
-队伍:咕嘎一辈子队
-修改者:咕嘎
-修改日期:2026-05-26
 """
 
 from __future__ import annotations

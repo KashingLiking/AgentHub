@@ -7,9 +7,6 @@ auth Pydantic DTO —— 登录 / 注册 / 刷新 / 用户公开信息
 3. TokenResponse 同时返回 access + refresh,前端按场景选用。
 4. username 限定 [a-zA-Z0-9_-]{4,50},password 至少 8 字符;严格校验靠正则,LLM 注入也无法绕过。
 
-队伍:咕嘎一辈子队
-修改者:咕嘎
-修改日期:2026-06-02
 """
 
 from __future__ import annotations

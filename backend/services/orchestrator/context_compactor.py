@@ -21,9 +21,6 @@ token 估算:
 MVP 阶段用字符数 / 4 粗估,误差 ±20% 但够用。等真有 token 优化需求再换 tiktoken
 或 anthropic count_tokens API。
 
-队伍:咕嘎一辈子队
-修改者:咕嘎
-修改日期:2026-05-26
 """
 
 from __future__ import annotations

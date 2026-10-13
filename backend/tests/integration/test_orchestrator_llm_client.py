@@ -11,9 +11,6 @@ backend/.env 已配置,直接跑即可。CI / 无网环境用 -m "not integratio
 Run with:
     PYTHONIOENCODING=utf-8 pytest -m integration backend/tests/integration/test_orchestrator_llm_client.py -v
 
-队伍:咕嘎一辈子队
-修改者:咕嘎
-修改日期:2026-05-26
 """
 
 import pytest

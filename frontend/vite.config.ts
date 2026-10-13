@@ -3,7 +3,7 @@ import vue from '@vitejs/plugin-vue'
 import tailwindcss from '@tailwindcss/vite'
 import { viteMockServe } from 'vite-plugin-mock'
 import { fileURLToPath, URL } from 'node:url'
-
+ 
 export default defineConfig({
   plugins: [
     vue(),
@@ -22,23 +22,23 @@ export default defineConfig({
     port: 5173,
     proxy: {
       '/api': {
-        target: 'http://localhost:8000',
+        target: 'http://localhost:18888',
         changeOrigin: true,
       },
       '/static': {
-        target: 'http://localhost:8000',
+        target: 'http://localhost:18888',
         changeOrigin: true,
       },
       '/memes': {
-        target: 'http://localhost:8000',
+        target: 'http://localhost:18888',
         changeOrigin: true,
       },
       '/ws': {
-        target: 'ws://localhost:8000',
+        target: 'ws://localhost:18888',
         ws: true,
       },
       '/preview': {
-        target: 'http://localhost:8000',
+        target: 'http://localhost:18888',
         changeOrigin: true,
       },
     },

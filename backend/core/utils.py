@@ -3,9 +3,6 @@
 
 集中放置跨模块复用的小工具,避免在 events.py / schemas/*.py 等文件里重复定义。
 
-队伍:咕嘎一辈子队
-修改者:Adam Zhang
-修改日期:2026-05-22
 """
 
 import uuid

@@ -1,9 +1,6 @@
 """
 HookManager —— Hook 注册中心 + 事件分发调度
 
-队伍:咕嘎一辈子队
-修改者:Adam Zhang
-修改日期:2026-05-25
 """
 
 import asyncio
